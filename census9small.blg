@@ -3,17 +3,17 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: census9small.aux
 The style file: plain.bst
 Database file #1: bibtexIndex.bib.bib
-I was expecting a `,' or a `}'---line 937 of file bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 957 of file bibtexIndex.bib.bib
  : 
  : @article{joli2012B,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1231 of file bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 1251 of file bibtexIndex.bib.bib
  : 
  : @article{polyak2010minimal,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 6159 of file bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 6179 of file bibtexIndex.bib.bib
  : 
  : %160
 (Error may have been on previous line)
