@@ -1,20 +1,45 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{alexandrov1961elementary}
+P.~S. Aleksandroff.
+\newblock {\em Elementary concepts of topology}, volume 747.
+\newblock Courier Dover Publications, 1961.
+
+\bibitem{alexandroff1932einfachste}
+P.~Alexandroff and D.~Hilbert.
+\newblock {\em Einfachste grundbegriffe der topologie}.
+\newblock Springer Berlin, 1932.
 
 \bibitem{bondy1976gta}
 J.A. Bondy and U.S.R. Murty.
 \newblock {\em {Graph theory with applications}}.
 \newblock Macmillan London, 1976.
 
+\bibitem{snappy}
+M.~Culler, N.~M. Dunfield, and J.~Weeks.
+\newblock Snappy, a computer program for studying the geometry and topology of
+  3-manifolds, 2012.
+
 \bibitem{hempel1976}
 J.~Hempel.
 \newblock {\em 3-Manifolds}, volume 349.
 \newblock Amer Mathematical Society, 1976.
+
+\bibitem{joli2012A}
+P.~Johnson and S.~Lins.
+\newblock A graphical calculus for tangles in surfaces.
+\newblock {\em arXiv:1210.6681v1 [math. GT]}, 2012.
 
 \bibitem{kauffman1994tlr}
 L.H. Kauffman and S.~Lins.
 \newblock {Temperley-Lieb Recoupling Theory and Invariants of 3-manifolds}.
 \newblock {\em Annals of Mathematical Studies, Princeton University Press},
   134:1--296, 1994.
+
+\bibitem{kirby1978calculus}
+R.~Kirby.
+\newblock A calculus for framed links in ${S}^3$.
+\newblock {\em Inventiones Mathematicae}, 45(1):35--56, 1978.
 
 \bibitem{lins2007blink}
 L.D. Lins.
@@ -31,6 +56,11 @@ S.~Lins.
 S.~L. Lins and L.~D. Lins.
 \newblock A challenge to 3-manifold topologists and group algebraists.
 \newblock {\em arXiv:1213.5964v4 [math.GT]}, 2013.
+
+\bibitem{martelli2012finite}
+B.~Martelli.
+\newblock A finite set of local moves for kirby calculus.
+\newblock {\em Journal of Knot Theory and Its Ramifications}, 21(14), 2012.
 
 \bibitem{weeks2001snappea}
 J.~Weeks.

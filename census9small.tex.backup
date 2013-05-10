@@ -61,7 +61,7 @@ bipartition of its edge set (blinks) up to 9 edges. Blinks form a universal enco
 We hope that this census becomes as useful for the study of concrete examples of 3-manifolds
 as the tables of knots are in the study of knots and links. Along the years we have made an issue
 in our computational work that it must be reproducible and independently checked by other researchers. 
-Our software is available,
+Our software {\sf BLINK} is available,
 but currently it lacks yet a good documentation and help is welcome to change this. An Wiki open source project
 is starting.
 
@@ -69,25 +69,120 @@ is starting.
 \end{abstract}
 \section{Introduction} 
 
-John Hempel in his book {\em 3-Manifolds} \cite{hempel1976} said in opening Section 15 on Open Problems:\\
+
+
+After presenting some instances of closed 3-manifolds,
+P. Alexandroff says in the English translation (1961) of 
+his joint work with D. Hilbert \cite{alexandrov1961elementary}, first
+published (1932) in German, \cite{alexandroff1932einfachste}:
+``These few examples will suffice. Let it be remarked here that, at present,
+in contrast with the two-dimensional case, the problem of enumerating the 
+topological types of manifolds of three and more dimensions is in an apparently 
+hopeless state. We are not only far removed from the solution, but even from the first step
+toward a solution, a plausible conjecture''.
+
+
+John Hempel in his book (1976) {\em 3-Manifolds} \cite{hempel1976} writes 
+at the opening of Section 15, titled \em {Open Problems:}\\
 ``The ultimate goal of the theory would be in providing solutions to:
  {\em The homeomorphism problem}: provide an {\em effective} procedure
  for determining whether two {\em given} 3-manifolds are homeomorphic, together with
  {\em The classification problem}: {\em effectively} generate a list containing
  exactly one 3-manifold from each homeomorphism class.''
+ 
+ We mean to provide a road for a 
+ segmented answer for Hempel's questions. The closed oriented 3-manifolds are partitioned
+ by the number of edges in a minimum encoding of them by a certain class of plane graphs, shortly
+ to be defined. Lexicography is used to define a representative unique plane graph (a canonical form) 
+ for each closed oriented 3-manifold. We explicitly solve the segmented problem 
+ up to 9 edges, see Theorem \ref{theorem:census9}. An important fact is that there is
+ a polynomial algorithm to make available the canonical form of any of any manifold
+ induced by plane graphs at the current level of the catalogue (currently 9 edges).
 
- This work is in the confluency of two deep research passions of the authors, apparently very far apart:
+ It is amazing how much the picture has changed in the 80 years since Alexandroff's, Hilbert book.
+ 
+ The progress was due to the deep  breakthroughs in the 1950's and 1960's, 
+ starting in the early 1980's of W. Thurston,
+ in the early 2000's, G. Perelman, and more recently 2010's, I. Agol and many others. 
+ Currently there is a great amount of important reserch issues
+ going on and these are exciting times for 3-manifold theory. 
+ 
+ We present here our modest contribution to the topic.
+ It is placed in the confluency of two deep research passions of the authors, apparently very far apart:
  The study of closed orientable 3-manifolds and the study of plane 
  graphs. By putting a bit of combinatorics
  on the graphs, namely, partitioning their edges into black and gray in an arbitrary way 
  we get an object named a {\em blink}.
- We make here explicitly that each class of homeomorphic closed oriented 3-manifolds is a subtle class
- of blinks where two membres of each class is linked by means of a small sets of local simple moves. 
- Thus, as simple as the blinks are, nevertheless they hold the mystery of 3-manifolds in their gist.
+ We make here explicit for the first time that each class of homeomorphic 
+ closed oriented 3-manifolds is a subtle class
+ of blinks where two membres of each class is linked by means of a small number of local simple moves. 
+ These moves (see Fig. \ref {fig:blinkcalculus}) are a slight reformulation 
+ for blinks of the one for framed links on Kirby's calculus
+ (\cite{kirby1978calculus}) recently published by Martelli, \cite{martelli2012finite}.
+ Thus, as simple as the blinks are, nevertheless they hold, in their gist,
+ the mystery of 3-manifolds.
  
  
+ 
+
+ 
+ \section{A formal calculus on blinks}
+ 
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=16cm]{A.figs/blinkcalculus.pdf}
+
+\caption{\sf Blink reformulation of Martelli's calculus.
+Here the 34 moves are for {\em oriented} 3-manifolds.
+A few comments are in order. First, the white vertices on the boundary of the shaded disk 
+are attachement vertices, the only connection
+with rest of the blink in the complement of the disk. The complementary configurations 
+
+are entirely arbitrary.
+The internal configuration is exactly as shown, in particular the internal black vertices
+has their neighborhood as depic\sf Solving the last two doubts in L. Lins's thesis: The shaded manifold 
+$U[1563]$ is distinct from the other 4 in the HG12QI-class $9_{126)$.ted. A {\em blink move} 
+consists in replacing one of the 34 
+disks on the left
+% by its counterpart on the right 
+% while leaving the exterior fixed, or vice versa. We made no effort in minimizing the number of moves.
+% For instance moves $\pm\rho_{33}$ and $\pm\rho_{33}^\star$ are equivalent. The negative of a move 
+% is obtained by interchanging the colors gray and black. The starred moves correspond to planar 
+% duality. Strong regular isotopies are obtained by strict local disk replacements: 
+% some Reidemeister move of type 2 causes difficulty by 
+% introducing a pinching in the disk. We avoid this at the cost of 
+% replacing the usual move 2 by four local local ones,
+% on the spirit of paper \cite{joli2012A}. 
+
+}
+
+
+
+
+\label{fig:blinkcalculus}
+\end{center}
+\end{figure} 
+
+
+
+ 
+ 
+\begin{theorem} Two blinks represent the same oriented closed 3-manifold if and only if
+  they are linked by a finite sequence where each term is one of the 34 moves 
+  of Fig. \ref{fig:blinkcalculus} or their inverses.
+\end{theorem}
+\begin{proof}
+ The moves are basically a reformulation of Martelli's calculus. The only difference is that
+ we have made them entirely local as disks replacements and treating the oriented case
+ at the expense of increasing the types of moves.
+\end{proof}
+
+
+
+\section{A complete duplicate free census of 9-small 3-manifolds}
 In references \cite{kauffman1994tlr}, \cite{lins2007blink} and \cite{lins1995gca}
-we we define and show how a {\em blink}, that is, a plane graph with
+we have defined and show how a {\em blink}, that is, a plane graph with
 an arbitrary partition of its edges (here presented as colors black and gray) induces a well
 defined closed oriented 3-manifold. Moreover each such a manifold is induced by a blink (in fact, by infinite blinks).
 An {\em $n$-small} is a closed, orientable, and prime
@@ -102,18 +197,35 @@ corresponding blackboard framed links. The notation $n_i$ attached to each blink
 is the name of its homeomorphism class, not merely its hgqi-class, as in \cite{lins2007blink}. 
 \eject
 \noindent
-This paper establishes the following theorem: 
+This paper concludes the proof of the following theorem: 
 \begin{theorem}
 Let $M^3$ be a closed, oriented and prime 3-manifold induced by a blink with at most 9 edges.
 Then $M^3$ is homeomorphic to exactly one of the 
 3-manifolds induced by the 489  blinks below. Morever all of these are pairwise non-homeomorphic.\\
-\includegraphics[width=16.8cm]{A.figs/primes489.pdf} 
+\includegraphics[width=16.8cm]{A.figs/primes489.pdf}
+\label{theorem:census9}
 \end{theorem}
 
 \begin{proof}
  The proof follows from L.Lins' thesis and from the discussion about the lengths of the
  smallest geodesics of the classes $9_{126}$ and $9_{199}$
 \end{proof}
+
+\section{Definition of Gem}
+For completeness we briefly recall the basic definitions of gem theory, leading to its definition, \cite{lins1995gca}.
+A {\em 4-graph} $G$ is a finite bipartite 4-regular graph whose edges are partitioned into 4 colors,
+0,1,2, and 3, 
+so that at each vertex there is an edge of each color, a proper edge-coloration, \cite{bondy1976gta}.
+For each $i \in \{0,1,2,3\}$, let $E_i$ denote the set of $i$-colored edges of $G$.
+A $\{j,k\}$-residue in a $4$-graph $G$ is a connected component of the subgraph induced by $E_j \cup E_k$.
+A 2-residue is a $\{j,k\}$-residue, for some distinct colors $j$ and $k$.
+A {\em gem} is a 4-graph $G$ such that for each color $i$, $G\backslash E_i$ can be embedded in the plane 
+such that the boundary of each face is a 2-residue. From a gem there exists a straightforward
+algorithm to obtain a closed orientable 3-manifold, in two different, dual ways. Every such a manifold is obtainable in this way.
+An unecessary big gem is obtained from a triangulation $T$ for a manifold by taking the dual of the 
+barycentric subdivision of $T$. Here the colors corresponds to the dimensions. Doing simplifications in the gem
+completely destroys this correspondence.
+
 
 \section{The resolution of the doubts left in L. Lins' thesis}
 The topological classification of the 9-small spaces was nearly completed in 
@@ -126,30 +238,20 @@ The 3-manifolds of \cite{lins2007blink} are classified by homology and the quant
 $r=3,\ldots,u$, up to $d$ decimal digits forming $hgqi_u^d$-classes. Our algorithm for computing the 
 $WRT_r^d$-invariants are based on the theory developed in \cite{kauffman1994tlr}.
 
- 
- \begin{figure}[!h]
-\begin{center}
-\includegraphics[width=16cm]{A.figs/nine126nine199.pdf}
-\caption{\sf {\bf Note's final challenge:}  classify topologically $9_{126}$ and $9_{199}$. 
-Here, to classify has the following strict meaning: for each pair}
-\label{fig:nine126nine199}
-\end{center}
-\end{figure} 
-
-
 After 6 years we have put our doubts as a Challenge to topologists and 
 group algebraists, \cite{linslins2013A}.
 \cite{weeks2001snappea}
-
  
  \begin{figure}
 \begin{center}
-\includegraphics[width=8.0cm]{A.figs/nine126and199.pdf}
-\caption{\sf {\bf Note's final challenge:}  classify topologically $9_{126}$ and $9_{199}$. 
-Here, to classify has the following strict meaning: for each pair}
-\label{fig:nine126and199}
+\includegraphics[width=8cm]{A.figs/nine126.pdf}
+\includegraphics[width=8cm]{A.figs/nine199.pdf}
+\caption{\sf Solving the last two doubts in L. Lins's thesis. The latter are homeomorphic.}
+\label{fig:nine126}
 \end{center}
 \end{figure} 
+
+The basic tool to differentiate the manifold is the software SnapPy, \cite{snappy}. 
 
 \eject
 \section{Appendix: census (no misses, no duplicates) of 9-small 3-manifolds}
@@ -175,20 +277,6 @@ Here, to classify has the following strict meaning: for each pair}
 %-----------------------------------
 %-----------------------------------
 
-\section{Definition of Gem}
-For completeness we briefly recall the basic definitions of gem theory, leading to its definition, \cite{lins1995gca}.
-A {\em 4-graph} $G$ is a finite bipartite 4-regular graph whose edges are partitioned into 4 colors,
-0,1,2, and 3, 
-so that at each vertex there is an edge of each color, a proper edge-coloration, \cite{bondy1976gta}.
-For each $i \in \{0,1,2,3\}$, let $E_i$ denote the set of $i$-colored edges of $G$.
-A $\{j,k\}$-residue in a $4$-graph $G$ is a connected component of the subgraph induced by $E_j \cup E_k$.
-A 2-residue is a $\{j,k\}$-residue, for some distinct colors $j$ and $k$.
-A {\em gem} is a 4-graph $G$ such that for each color $i$, $G\backslash E_i$ can be embedded in the plane 
-such that the boundary of each face is a 2-residue. From a gem there exists a straightforward
-algorithm to obtain a closed orientable 3-manifold, in two different, dual ways. Every such a manifold is obtainable in this way.
-An unecessary big gem is obtained from a triangulation $T$ for a manifold by taking the dual of the 
-barycentric subdivision of $T$. Here the colors corresponds to the dimensions. Doing simplifications in the gem
-completely destroys this correspondence.
 
 \section{Conclusion}
 A closed orientable 3-manifold is denoted {\em $n$-small} if it is induced by surgery on
