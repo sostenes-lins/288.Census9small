@@ -52,8 +52,9 @@
 
 
 \maketitle
-
 \begin{abstract}
+
+
 In this work we present a complete (no misses, no duplicates) catalogue for closed, orientable and
 prime 3-manifolds induced by plane graphs with a 
 bipartition of its edge set (blinks) up to 9 edges. Blinks form a universal encoding for such manifolds. 
@@ -68,28 +69,50 @@ is starting.
 \end{abstract}
 \section{Introduction} 
 
+John Hempel in his book {\em 3-Manifolds} \cite{hempel1976} said in opening Section 15 on Open Problems:\\
+``The ultimate goal of the theory would be in providing solutions to:
+ {\em The homeomorphism problem}: provide an {\em effective} procedure
+ for determining whether two {\em given} 3-manifolds are homeomorphic, together with
+ {\em The classification problem}: {\em effectively} generate a list containing
+ exactly one 3-manifold from each homeomorphism class.'' We here provide a road for a 
+ segmented answer for these questions. The closed oriented 3-manifolds are partitioned
+ by the number of edges in a minimum encoding of them by a certain class of plane graphs, shortly
+ to be defined. We use lexicography to define a representative unique plane graph for each 3-manifold
+ of that type. We explicitly solve the segmented problem up to 9 edges, see Theorem \ref{theorem:census9}.
+
+ This work is in the confluency of two deep research passions of the authors, apparently very far apart:
+ The study of closed orientable 3-manifolds and the study of plane 
+ graphs. By putting a bit of combinatorics
+ on the graphs, namely, partitioning their edges into black and gray in an arbitrary way 
+ we get an object named a {\em blink}.
+ We make here explicitly that each class of homeomorphic closed oriented 3-manifolds is a subtle class
+ of blinks where two membres of each class is linked by means of a small sets of local simple moves. 
+ Thus, as simple as the blinks are, nevertheless they hold the mystery of 3-manifolds in their gist.
+ 
+ 
 In references \cite{kauffman1994tlr}, \cite{lins2007blink} and \cite{lins1995gca}
-we we define and show how a {\em blink}, that is, a plane graph with
+we have defined and show how a {\em blink}, that is, a plane graph with
 an arbitrary partition of its edges (here presented as colors black and gray) induces a well
 defined closed oriented 3-manifold. Moreover each such a manifold is induced by a blink (in fact, by infinite blinks).
 An {\em $n$-small} is a closed, orientable, and prime
 3-manifold is a manifold induced by a blink with at most $n$ edges.
 Relative to \cite{lins2007blink} the blinks of next theorem have receive two additions, the representative blinks
 $U[1563]$ and $U[2165]$.
-This is because the jgqi-classes $9_{126}$ and $9_{199}$ of \cite{lins2007blink} split
-into two topological classes. The new content of the present work is to prove that the splitings indeed take place.
+This is because the HGnQI-classes $9_{126}$ and $9_{199}$ of \cite{lins2007blink} split
+into two topological classes. An objective of the present work is to prove that the splitings indeed take place.
 
 We observe that the blinks are enlarged in the appendix, showing them together with the
 corresponding blackboard framed links. The notation $n_i$ attached to each blink below,
 is the name of its homeomorphism class, not merely its hgqi-class, as in \cite{lins2007blink}. 
 \eject
 \noindent
-This paper establishes the following theorem: 
+This paper concludes the proof of the following theorem: 
 \begin{theorem}
 Let $M^3$ be a closed, oriented and prime 3-manifold induced by a blink with at most 9 edges.
 Then $M^3$ is homeomorphic to exactly one of the 
 3-manifolds induced by the 489  blinks below. Morever all of these are pairwise non-homeomorphic.\\
-\includegraphics[width=16.8cm]{A.figs/primes489.pdf} 
+\includegraphics[width=16.8cm]{A.figs/primes489.pdf}
+\label{theorem:census9}
 \end{theorem}
 
 \begin{proof}
@@ -126,10 +149,19 @@ group algebraists, \cite{linslins2013A}.
  
  \begin{figure}
 \begin{center}
-\includegraphics[width=8.0cm]{A.figs/nine126and199.pdf}
+\includegraphics[width=8.0cm]{A.figs/nine126.pdf}
 \caption{\sf {\bf Note's final challenge:}  classify topologically $9_{126}$ and $9_{199}$. 
 Here, to classify has the following strict meaning: for each pair}
-\label{fig:nine126and199}
+\label{fig:nine126}
+\end{center}
+\end{figure} 
+
+ \begin{figure}
+\begin{center}
+\includegraphics[width=8.0cm]{A.figs/nine199.pdf}
+\caption{\sf {\bf Note's final challenge:}  classify topologically $9_{126}$ and $9_{199}$. 
+Here, to classify has the following strict meaning: for each pair}
+\label{fig:nine199}
 \end{center}
 \end{figure} 
 
