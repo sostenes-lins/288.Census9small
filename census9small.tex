@@ -1,7 +1,7 @@
-\documentclass[a4paper,10pt,twoside]{article}
+\documentclass[a4paper,12pt,twoside]{article}
 
 %===========PACOTES
-\usepackage[body={165mm,235mm}]{geometry}
+\usepackage[body={175mm,235mm}]{geometry}
 %\usepackage[portuguese]{babel}
 \usepackage{a1}
 \usepackage[english]{babel}
@@ -125,7 +125,7 @@ at the opening of Section 15, titled {\em Open Problems:}\\
   
   \begin{figure}[!h]
    \begin{center}
-\includegraphics[width=13cm]{A.figs/blinkcalculus.pdf}
+\includegraphics[width=10cm]{A.figs/blinkcalculus.pdf}
 \caption{\sf Blink reformulation of Martelli's calculus.
 Here the 20 moves are for {\em closed oriented} 3-manifolds.
 A few comments are in order. First, the white vertices on the boundary of the shaded disk 
@@ -153,6 +153,7 @@ the bfl's.
 \end{center}
 \end{figure} 
 
+\eject
 
 \begin{theorem} Two blinks represent the same oriented closed 3-manifold if and only if
   they are linked by a finite sequence where each term is one of the 20 moves 
@@ -164,8 +165,25 @@ the bfl's.
  at the expense of increasing the types of moves.
 \end{proof}
 
+Any plane drawing of a graph with an arbitrary bipartition of its edge set, a blink,
+corresponds to a unique closed oriented 3-manifold via the associated 
+blackboard framed links. An important aspect
+about blinks is that each one possesses an easily obtainable {\em canonical form}
+inducing the same 3-manifold: it is named the {\em representative of the blink} and is obtained
+by lexicography form a small number of conventions, fixed in advance. 
+This is explained in L. Lins' thesis, \cite{lins2007blink}. 
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=5cm]{A.figs/doglikeblink.pdf} 
+\raisebox{2cm}{
+$\mapright{unique\  representative}{algorithm \ (canonical \ form \ of \ blink)}$ }
+\includegraphics[width=3cm]{A.figs/repdoglikeblink.pdf} 
+\caption{\sf Blink representative algorithm: doglike blink and its representative}
+\label{fig:doglikeblink}
+\end{center}
+\end{figure} 
 
-
+\eject
 \section{A complete duplicate free census of 9-small 3-manifolds}
 In references \cite{kauffman1994tlr}, \cite{lins2007blink} and \cite{lins1995gca}
 we have defined and show how a {\em blink}, that is, a plane graph with
@@ -181,19 +199,19 @@ into two topological classes. An objective of the present work is to prove that 
 We observe that the blinks are enlarged in the appendix, showing them together with the
 corresponding blackboard framed links. The notation $n_i$ attached to each blink below,
 is the name of its homeomorphism class, not merely its hgqi-class, as in \cite{lins2007blink}. 
-\eject
-\noindent
+
 This paper concludes the proof of the following theorem: 
 \begin{theorem}
 Let $M^3$ be a closed, oriented and prime 3-manifold induced by a blink with at most 9 edges.
 Then $M^3$ is homeomorphic to exactly one of the 
 3-manifolds induced by the 489  blinks below. Morever all of these are pairwise non-homeomorphic.\\
-\includegraphics[width=16.8cm]{A.figs/primes489.pdf}
+\includegraphics[width=17.5cm]{A.figs/primes489.pdf}
 \label{theorem:census9}
 \end{theorem}
 
 \begin{proof}
- The proof follows from L.Lins' thesis and from the discussion about the lengths of the
+ The proof follows from L.Lins' thesis and from the 
+ discussion about the lengths of the
  smallest geodesics of the classes $9_{126}$ and $9_{199}$
 \end{proof}
 
@@ -239,9 +257,8 @@ group algebraists, \cite{linslins2013A}.
 
 The basic tool to differentiate the manifold is the software SnapPy, \cite{snappy}. 
 
-\eject
+\newpage .
 \section{Appendix: census (no misses, no duplicates) of 9-small 3-manifolds}
-
 \subsection*{Part 1/4 in terms of blinks:}
 \center{\includegraphics[width=16.5cm]{A.figs/primes489m11.pdf}} \eject \noindent
 \subsection*{Part 1/4 in terms of blackboard framed links:}
