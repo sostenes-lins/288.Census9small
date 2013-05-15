@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.11)  15 MAY 2013 08:58
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.11)  15 MAY 2013 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,17 +313,44 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<A.figs/blinkcalculus.pdf, id=15, 449.57962pt x 592.09377pt>
+<A.figs/linkblink.pdf, id=15, 312.61783pt x 261.38635pt>
+File: A.figs/linkblink.pdf Graphic file (type pdf)
+
+<use A.figs/linkblink.pdf>
+Package pdftex.def Info: A.figs/linkblink.pdf used on input line 172.
+(pdftex.def)             Requested size: 241.84842pt x 202.21735pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<A.figs/blinkcalculus.pdf, id=16, 566.51653pt x 299.72696pt>
 File: A.figs/blinkcalculus.pdf Graphic file (type pdf)
 
 <use A.figs/blinkcalculus.pdf>
-Package pdftex.def Info: A.figs/blinkcalculus.pdf used on input line 128.
-(pdftex.def)             Requested size: 284.52756pt x 374.72858pt.
+Package pdftex.def Info: A.figs/blinkcalculus.pdf used on input line 182.
+(pdftex.def)             Requested size: 455.24408pt x 240.8612pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 151.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 215.
 
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2] <A.figs/doglikeblink.pdf, id=27, 171.34598pt x 129.55844pt>
+File: A.figs/doglikeblink.pdf Graphic file (type pdf)
+
+<use A.figs/doglikeblink.pdf>
+Package pdftex.def Info: A.figs/doglikeblink.pdf used on input line 246.
+(pdftex.def)             Requested size: 184.9429pt x 139.83997pt.
+
+<A.figs/repdoglikeblink.pdf, id=28, 102.82397pt x 118.70294pt>
+File: A.figs/repdoglikeblink.pdf Graphic file (type pdf)
+
+<use A.figs/repdoglikeblink.pdf>
+Package pdftex.def Info: A.figs/repdoglikeblink.pdf used on input line 249.
+(pdftex.def)             Requested size: 85.35826pt x 98.5415pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -331,149 +358,144 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-[3 <./A.figs/blinkcalculus.pdf>]
-<A.figs/doglikeblink.pdf, id=30, 171.34598pt x 129.55844pt>
-File: A.figs/doglikeblink.pdf Graphic file (type pdf)
+ [3 <./A.figs/linkblink.pdf>]
+Underfull \vbox (badness 1490) has occurred while \output is active []
 
-<use A.figs/doglikeblink.pdf>
-Package pdftex.def Info: A.figs/doglikeblink.pdf used on input line 177.
-(pdftex.def)             Requested size: 142.26378pt x 107.56906pt.
-
-<A.figs/repdoglikeblink.pdf, id=31, 102.82397pt x 118.70294pt>
-File: A.figs/repdoglikeblink.pdf Graphic file (type pdf)
-
-<use A.figs/repdoglikeblink.pdf>
-Package pdftex.def Info: A.figs/repdoglikeblink.pdf used on input line 180.
-(pdftex.def)             Requested size: 85.35826pt x 98.5415pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <./A.figs/doglikeblink.pdf> <./A.figs/repdoglikeblink.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/repdoglikeblink.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
->] <A.figs/primes489.pdf, id=39, 522.17203pt x 648.74432pt>
+ [4 <./A.figs/blinkcalculus.pdf>] <A.figs/primes489.pdf, id=41, 522.17203pt x 6
+48.74432pt>
 File: A.figs/primes489.pdf Graphic file (type pdf)
 
 <use A.figs/primes489.pdf>
-Package pdftex.def Info: A.figs/primes489.pdf used on input line 208.
+Package pdftex.def Info: A.figs/primes489.pdf used on input line 280.
 (pdftex.def)             Requested size: 497.92322pt x 618.62988pt.
+
+<A.figs/primes489links.pdf, id=42, 521.79996pt x 641.21037pt>
+File: A.figs/primes489links.pdf Graphic file (type pdf)
+
+<use A.figs/primes489links.pdf>
+Package pdftex.def Info: A.figs/primes489links.pdf used on input line 281.
+(pdftex.def)             Requested size: 497.92322pt x 611.88594pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
-[6 <./A.figs/primes489.pdf>]
-<A.figs/nine126.pdf, id=48, 376.48154pt x 418.08821pt>
+ [5 <./A.figs/doglikeblink.pdf> <./A.figs/repdoglikeblink.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/repdoglikeblink.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./A.figs/primes489.pdf>] [7 <./A.figs/primes489links.pdf>]
+<A.figs/nine126.pdf, id=60, 376.48154pt x 418.08821pt>
 File: A.figs/nine126.pdf Graphic file (type pdf)
 
 <use A.figs/nine126.pdf>
-Package pdftex.def Info: A.figs/nine126.pdf used on input line 251.
+Package pdftex.def Info: A.figs/nine126.pdf used on input line 324.
 (pdftex.def)             Requested size: 227.62204pt x 252.78146pt.
 
-<A.figs/nine199.pdf, id=49, 376.68228pt x 338.23866pt>
+<A.figs/nine199.pdf, id=61, 376.68228pt x 338.23866pt>
 File: A.figs/nine199.pdf Graphic file (type pdf)
 
 <use A.figs/nine199.pdf>
-Package pdftex.def Info: A.figs/nine199.pdf used on input line 252.
+Package pdftex.def Info: A.figs/nine199.pdf used on input line 325.
 (pdftex.def)             Requested size: 227.62204pt x 204.39502pt.
- [7]
-<A.figs/primes489m11.pdf, id=54, 519.42622pt x 622.33517pt>
+ [8]
+<A.figs/primes489m11.pdf, id=65, 519.42622pt x 622.33517pt>
 File: A.figs/primes489m11.pdf Graphic file (type pdf)
 
 <use A.figs/primes489m11.pdf>
-Package pdftex.def Info: A.figs/primes489m11.pdf used on input line 263.
+Package pdftex.def Info: A.figs/primes489m11.pdf used on input line 336.
 (pdftex.def)             Requested size: 469.47046pt x 562.49898pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./A.figs/nine126.pdf> <./A.figs/nine199.pdf
+ [9 <./A.figs/nine126.pdf> <./A.figs/nine199.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./A.figs/nine199.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 >]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./A.figs/primes489m11.pdf>]
-<A.figs/primes489linksm11.pdf, id=88, 521.83372pt x 615.94588pt>
+ [10 <./A.figs/primes489m11.pdf>]
+<A.figs/primes489linksm11.pdf, id=99, 521.83372pt x 615.94588pt>
 File: A.figs/primes489linksm11.pdf Graphic file (type pdf)
 
 <use A.figs/primes489linksm11.pdf>
-Package pdftex.def Info: A.figs/primes489linksm11.pdf used on input line 265.
+Package pdftex.def Info: A.figs/primes489linksm11.pdf used on input line 338.
 (pdftex.def)             Requested size: 469.47046pt x 554.15819pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./A.figs/primes489linksm11.pdf>]
-<A.figs/primes489m12.pdf, id=94, 520.07367pt x 621.83807pt>
+ [11 <./A.figs/primes489linksm11.pdf>]
+<A.figs/primes489m12.pdf, id=105, 520.07367pt x 621.83807pt>
 File: A.figs/primes489m12.pdf Graphic file (type pdf)
 
 <use A.figs/primes489m12.pdf>
-Package pdftex.def Info: A.figs/primes489m12.pdf used on input line 267.
+Package pdftex.def Info: A.figs/primes489m12.pdf used on input line 340.
 (pdftex.def)             Requested size: 469.47046pt x 561.33804pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <./A.figs/primes489m12.pdf>]
-<A.figs/primes489linksm12.pdf, id=100, 510.7831pt x 615.91298pt>
+ [12 <./A.figs/primes489m12.pdf>]
+<A.figs/primes489linksm12.pdf, id=111, 510.7831pt x 615.91298pt>
 File: A.figs/primes489linksm12.pdf Graphic file (type pdf)
 
 <use A.figs/primes489linksm12.pdf>
-Package pdftex.def Info: A.figs/primes489linksm12.pdf used on input line 269.
+Package pdftex.def Info: A.figs/primes489linksm12.pdf used on input line 342.
 (pdftex.def)             Requested size: 469.47046pt x 566.09233pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./A.figs/primes489linksm12.pdf>]
-<A.figs/primes489m21.pdf, id=106, 529.19925pt x 673.1339pt>
+ [13 <./A.figs/primes489linksm12.pdf>]
+<A.figs/primes489m21.pdf, id=118, 529.19925pt x 673.1339pt>
 File: A.figs/primes489m21.pdf Graphic file (type pdf)
 
 <use A.figs/primes489m21.pdf>
-Package pdftex.def Info: A.figs/primes489m21.pdf used on input line 271.
+Package pdftex.def Info: A.figs/primes489m21.pdf used on input line 344.
 (pdftex.def)             Requested size: 469.47046pt x 597.16656pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./A.figs/primes489m21.pdf>]
-<A.figs/primes489linksm21.pdf, id=113, 513.88622pt x 666.77113pt>
+ [14 <./A.figs/primes489m21.pdf>]
+<A.figs/primes489linksm21.pdf, id=124, 513.88622pt x 666.77113pt>
 File: A.figs/primes489linksm21.pdf Graphic file (type pdf)
 
 <use A.figs/primes489linksm21.pdf>
-Package pdftex.def Info: A.figs/primes489linksm21.pdf used on input line 273.
+Package pdftex.def Info: A.figs/primes489linksm21.pdf used on input line 346.
 (pdftex.def)             Requested size: 469.47046pt x 609.14343pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <./A.figs/primes489linksm21.pdf>]
-<A.figs/primes489m22.pdf, id=119, 526.59344pt x 621.36082pt>
+ [15 <./A.figs/primes489linksm21.pdf>]
+<A.figs/primes489m22.pdf, id=130, 526.59344pt x 621.36082pt>
 File: A.figs/primes489m22.pdf Graphic file (type pdf)
 
 <use A.figs/primes489m22.pdf>
-Package pdftex.def Info: A.figs/primes489m22.pdf used on input line 275.
+Package pdftex.def Info: A.figs/primes489m22.pdf used on input line 348.
 (pdftex.def)             Requested size: 469.47046pt x 553.98595pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <./A.figs/primes489m22.pdf>]
-<A.figs/primes489linksm22.pdf, id=125, 526.93953pt x 614.27258pt>
+ [16 <./A.figs/primes489m22.pdf>]
+<A.figs/primes489linksm22.pdf, id=136, 526.93953pt x 614.27258pt>
 File: A.figs/primes489linksm22.pdf Graphic file (type pdf)
 
 <use A.figs/primes489linksm22.pdf>
-Package pdftex.def Info: A.figs/primes489linksm22.pdf used on input line 277.
+Package pdftex.def Info: A.figs/primes489linksm22.pdf used on input line 350.
 (pdftex.def)             Requested size: 469.47046pt x 547.27264pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <./A.figs/primes489linksm22.pdf>] (./census9small.bbl) [17] [18] (./census
+ [17 <./A.figs/primes489linksm22.pdf>] (./census9small.bbl [18]) [19] (./census
 9small.aux) ) 
 Here is how much of TeX's memory you used:
- 3489 strings out of 493485
- 46883 string characters out of 3143526
- 112789 words of memory out of 3000000
- 6713 multiletter control sequences out of 15000+200000
+ 3503 strings out of 493485
+ 47213 string characters out of 3143526
+ 118459 words of memory out of 3000000
+ 6725 multiletter control sequences out of 15000+200000
  16580 words of font info for 63 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,17n,31p,1479b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,17n,31p,2417b,262s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></u
@@ -487,13 +509,15 @@ blic/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on census9small.pdf (18 pages, 2407473 bytes).
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on census9small.pdf (19 pages, 3094450 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 208 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,7 @@
-\documentclass[a4paper,10pt,twoside]{article}
+\documentclass[a4paper,12pt,twoside]{article}
 
 %===========PACOTES
-\usepackage[body={165mm,235mm}]{geometry}
+\usepackage[body={175mm,235mm}]{geometry}
 %\usepackage[portuguese]{babel}
 \usepackage{a1}
 \usepackage[english]{babel}
@@ -40,7 +40,7 @@
 \def\U{\mathcal U}
 \def\Z{\mathbb Z}
 
-\title{All the shapes of spaces: a census of 9-small 3-manifolds
+\title{All the shapes of spaces: a census of small 3-manifolds
 \footnote{2010 Mathematics Subject Classification: 
 57M25 and 57Q15 (primary), 57M27 and 57M15 (secondary)}} 
 \author{Sóstenes L. Lins and Lauro D. Lins}
@@ -83,103 +83,162 @@ toward a solution, a plausible conjecture''.
 
 
 John Hempel in his book (1976) {\em 3-Manifolds} \cite{hempel1976} writes 
-at the opening of Section 15, titled \em {Open Problems:}\\
+at the opening of Section 15, titled {\em Open Problems:}\\
 ``The ultimate goal of the theory would be in providing solutions to:
  {\em The homeomorphism problem}: provide an {\em effective} procedure
  for determining whether two {\em given} 3-manifolds are homeomorphic, together with
  {\em The classification problem}: {\em effectively} generate a list containing
  exactly one 3-manifold from each homeomorphism class.''
  
- We mean to provide a road for a 
- segmented answer for Hempel's questions. The closed oriented 3-manifolds are partitioned
- by the number of edges in a minimum encoding of them by a certain class of plane graphs, shortly
- to be defined. Lexicography is used to define a representative unique plane graph (a canonical form) 
- for each closed oriented 3-manifold. We explicitly solve the segmented problem 
- up to 9 edges, see Theorem \ref{theorem:census9}. An important fact is that there is
- a polynomial algorithm to make available the canonical form of any of any manifold
- induced by plane graphs at the current level of the catalogue (currently 9 edges).
-
- It is amazing how much the picture has changed in the 80 years since Alexandroff's, Hilbert book.
  
+ It is amazing how much the picture has changed in the 80 years since Alexandroff's-Hilbert book.
  The progress was due to the deep  breakthroughs in the 1950's and 1960's, 
  starting in the early 1980's of W. Thurston,
  in the early 2000's, G. Perelman, and more recently 2010's, I. Agol and many others. 
  Currently there is a great amount of important reserch issues
- going on and these are exciting times for 3-manifold theory. 
+ going on and these are exciting times for 3-manifold theory. See the recent essay of E. Klarreich
+ in the Simons Foundation, \cite{Klarreich1012}.
+ 
  
  We present here our modest contribution to the topic.
  It is placed in the confluency of two deep research passions of the authors, apparently very far apart:
  The study of closed orientable 3-manifolds and the study of plane 
- graphs. By putting a bit of combinatorics
- on the graphs, namely, partitioning their edges into black and gray in an arbitrary way 
- we get an object named a {\em blink}.
+ graphs. We mean to provide a road for a segmented answer for Hempel's questions. 
+ The closed oriented 3-manifolds are partitioned
+ by the number of edges in a minimum encoding of them by a certain class of plane graphs, shortly
+ to be defined. Lexicography is used to define a representative unique plane graph (a canonical form) 
+ for each closed oriented 3-manifold. We explicitly solve the segmented problem 
+ up to 9 edges, see Theorem \ref{theorem:census9}. An important fact is that there is
+ a polynomial algorithm to make available the canonical form of any manifold
+ induced by plane graphs at the current level of the catalogue (currently 9 edges).
+
+
+ \section{Encoding closed orientable 3-manifolds by plane graphs}
+ Unexplored simplicity. This was the reason for birth of this work. A {\em blink} is a plane
+ graph with an arbitrary bipartition of its edges in gray and black. Even though this object
+ is around since 1994 when it was introduced in the joint research monography of L. Kauffman and
+ S. Lins, \cite{kauffman1994tlr}, they remain largely unkown. 
  We make here explicit for the first time that each class of homeomorphic 
  closed oriented 3-manifolds is a subtle class
  of blinks where two membres of each class is linked by means of a small number of local simple moves. 
- These moves (see Fig. \ref {fig:blinkcalculus}) are a slight reformulation 
+ Our moves (see Fig. \ref {fig:blinkcalculus}) are a slight reformulation 
  for blinks of the one for framed links on Kirby's calculus
- (\cite{kirby1978calculus}) recently published by Martelli, \cite{martelli2012finite}.
- Thus, as simple as the blinks are, nevertheless they hold, in their gist,
- the mystery of 3-manifolds.
+ (\cite{kirby1978calculus}) using Fenn and Rourke moves for the calculus, \cite{fenn1979kirby} 
+ recently published by Martelli, \cite{martelli2012finite}.
+ No doubt that blinks are simple. But after Martelli's reformulation we see that they hold
+ in their gist the mystery of 3-manifolds.
+ 
+ In a grounding breaking work, Lickorish in 1962, \cite{lickorish1962representation}, proved that
+ each closed orientable 3-manifold can be encoded by a link in $\mathbb{S}^ 3$ 
+ where each one of its $k$ components
+ is endowed with an irreducible fraction (the framing) $\frac {\pm p}{q}$ 
+ where $q$ could be 0, and in the case the fraction
+ becomes $\pm \infty$. To construct the 3-manifold $\mathbb{M}^3$ 
+ from the framed link we act as follows: after removing 
+ an $\epsilon$-neighborhood of each link component we are left with 
+ $\mathbb{S}^ 3\backslash (\mathbb{S}^ 1 \times \mathbb{D}^2)_k$. The fraction specifies, in the 
+ toroidal boundary inside $\mathbb{S}^ 3$, the homology type $(\pm p,q)$ of the curve that
+ we want to be contractible in the solid torus inside $\mathbb{M}^3$. For each component, we then
+ identify the curve given by the pair with the meridian of a canonical copy of a 
+ solid torus in $\mathbb{R}^ 3$  to as to completely specify the closing of each toroidal hole.
  
  
+  \begin{proposition}
+  Given any fractional framed link it is possible to obtain an integer framed link
+  inducing the same 3-manifold.
+ \end{proposition}
+ \begin{proof}
+  See \cite{rolfsen2003knots} for the proof and a simple complete example in \cite{lins1995gca}.
+ \end{proof}
  
+ A {\em blackboard framed link} is an integer framed link, given as a projection in the plane 
+ (with upper and lower
+ strands recorded) where the framing of a component the algebraic sum of the signs of 
+ the self-crossings of the 
+ component.
+ 
+ \begin{proposition}
+  Given any integer framed link it is possible to obtain a blackboard framed link
+  inducing the same 3-manifold.
+ \end{proposition}
+ \begin{proof}
+  Just introduce an adequate set of positive and negative curls to the components
+  to have their self-writhes agreeing with the required integer framing.
+ \end{proof}
+
 
  
  \section{A formal calculus on blinks}
- 
-
-\begin{figure}[!h]
-\begin{center}
+  
+  \begin{figure}[!h]
+   \begin{center}
 \includegraphics[width=16cm]{A.figs/blinkcalculus.pdf}
-
-\caption{\sf Blink reformulation of Martelli's calculus.
-Here the 34 moves are for {\em oriented} 3-manifolds.
-A few comments are in order. First, the white vertices on the boundary of the shaded disk 
-are attachement vertices, the only connection
-with rest of the blink in the complement of the disk. The complementary configurations 
-
-are entirely arbitrary.
-The internal configuration is exactly as shown, in particular the internal black vertices
-has their neighborhood as depic\sf Solving the last two doubts in L. Lins's thesis: The shaded manifold 
-$U[1563]$ is distinct from the other 4 in the HG12QI-class $9_{126)$.ted. A {\em blink move} 
-consists in replacing one of the 34 
-disks on the left
-% by its counterpart on the right 
-% while leaving the exterior fixed, or vice versa. We made no effort in minimizing the number of moves.
-% For instance moves $\pm\rho_{33}$ and $\pm\rho_{33}^\star$ are equivalent. The negative of a move 
-% is obtained by interchanging the colors gray and black. The starred moves correspond to planar 
-% duality. Strong regular isotopies are obtained by strict local disk replacements: 
-% some Reidemeister move of type 2 causes difficulty by 
-% introducing a pinching in the disk. We avoid this at the cost of 
-% replacing the usual move 2 by four local local ones,
-% on the spirit of paper \cite{joli2012A}. 
-
+\caption{\sf{\bf  Blink-coin reformulation of Martelli's calculus}:
+there are 8 types of moves, each having four moves, a total of 32 local inverse pairs of moves.
+The four moves of the same type are obtained either by changing sign which means
+to interchange the gray and black colors of the edges (changing the parity)
+or by plane duality (represented by the starred moves)
+followed by the interchanging of gray and black (which produces the same
+associated blackboard framed link). There are a grand total of 64 moves, 
+because each move goes from left to right (which names the moves) or from right to left 
+(its inverse move, which must have a $-1$ exponente)
+in each one of the 32 pairs.
+For each move a local disk (named coin) with an internal specific
+configuration is replaced by another coin with another internal specific configuration.
+The complement of the disk contains a completely arbitrary blink whose intersection
+with the the internal blink is formed by some isolated attachment vertices represented by small
+white circle in the boundary of the coin. The number of such attachment vertices is the first
+index of the move. In all but moves $\pm\rho_2$
+corresponding to Reidemeister move 2 in the blackboard framed link,
+the replacing coin is a disk; in the four exceptional moves 
+one disk becomes a pinched disk (or vice-versa), but this causes no harm. 
+We made no effort in minimizing the number of moves.
+For instance moves $\pm\rho_{3}$ and $\pm\rho_{3}^\star$ 
+$\pm\alpha_{31}$ and $\pm\alpha_{31}^\star$ are equivalent because the moves are self-dual. 
+As a matter of fact, beyound the self-dual moves we can show that every 
+$\alpha_{ij}^ \star$ move is redundant by global considerations. The last 4 tyoes of moves,
+on the contrary of the previous ones are not direct translations from Martelli' s calculus
+restricted to blackboard framed links. However it is easy to show that our whole set of moves
+imply and are implied by the direct translation of Martelli' s. All last four types of
+moves are more convenient, because they maintain the number of edges.
 }
-
-
-
-
 \label{fig:blinkcalculus}
 \end{center}
 \end{figure} 
 
+\eject
 
-
- 
- 
 \begin{theorem} Two blinks represent the same oriented closed 3-manifold if and only if
-  they are linked by a finite sequence where each term is one of the 34 moves 
+  they are linked by a finite sequence where each term is one 
+  $\{\pm \rho_2, \pm \rho_2^\star, \pm \rho_3, \pm\alpha_{01} \}$
   of Fig. \ref{fig:blinkcalculus} or their inverses.
 \end{theorem}
 \begin{proof}
  The moves are basically a reformulation of Martelli's calculus. The only difference is that
- we have made them entirely local as disks replacements and treating the oriented case
+ we have made them entirely local as disks replacements and treat the oriented case
  at the expense of increasing the types of moves.
 \end{proof}
 
+Any plane drawing of a graph with an arbitrary bipartition of its edge set, a blink,
+corresponds to a unique closed oriented 3-manifold via the associated 
+blackboard framed links. An important aspect
+about blinks is that each one possesses an easily obtainable {\em canonical form}
+inducing the same 3-manifold: it is named the {\em representative of the blink} and is obtained
+by lexicography from a small number of conventions, fixed in advance. 
+This is explained, with a great amount of details, 
+in L. Lins' thesis, \cite{lins2007blink}. 
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=6.5cm]{A.figs/doglikeblink.pdf} 
+\raisebox{1.7cm}{
+$\mapright{unique\  representative}{algorithm \ (canonical \ form \ of \ blink)}$ }
+\includegraphics[width=3cm]{A.figs/repdoglikeblink.pdf} 
+\caption{\sf Blink representative algorithm: doglike blink with 27 edges and its representative with 25 edges.}
+\label{fig:doglikeblink}
+\end{center}
+\end{figure} 
 
-
+\eject
 \section{A complete duplicate free census of 9-small 3-manifolds}
 In references \cite{kauffman1994tlr}, \cite{lins2007blink} and \cite{lins1995gca}
 we have defined and show how a {\em blink}, that is, a plane graph with
@@ -195,19 +254,20 @@ into two topological classes. An objective of the present work is to prove that 
 We observe that the blinks are enlarged in the appendix, showing them together with the
 corresponding blackboard framed links. The notation $n_i$ attached to each blink below,
 is the name of its homeomorphism class, not merely its hgqi-class, as in \cite{lins2007blink}. 
-\eject
-\noindent
+
 This paper concludes the proof of the following theorem: 
 \begin{theorem}
 Let $M^3$ be a closed, oriented and prime 3-manifold induced by a blink with at most 9 edges.
 Then $M^3$ is homeomorphic to exactly one of the 
 3-manifolds induced by the 489  blinks below. Morever all of these are pairwise non-homeomorphic.\\
-\includegraphics[width=16.8cm]{A.figs/primes489.pdf}
+\includegraphics[width=17.5cm]{A.figs/primes489.pdf}\\
+\includegraphics[width=17.5cm]{A.figs/primes489links.pdf} 
 \label{theorem:census9}
 \end{theorem}
 
 \begin{proof}
- The proof follows from L.Lins' thesis and from the discussion about the lengths of the
+ The proof follows from L.Lins' thesis and from the 
+ discussion about the lengths of the
  smallest geodesics of the classes $9_{126}$ and $9_{199}$
 \end{proof}
 
@@ -253,9 +313,8 @@ group algebraists, \cite{linslins2013A}.
 
 The basic tool to differentiate the manifold is the software SnapPy, \cite{snappy}. 
 
-\eject
+\newpage .
 \section{Appendix: census (no misses, no duplicates) of 9-small 3-manifolds}
-
 \subsection*{Part 1/4 in terms of blinks:}
 \center{\includegraphics[width=16.5cm]{A.figs/primes489m11.pdf}} \eject \noindent
 \subsection*{Part 1/4 in terms of blackboard framed links:}
