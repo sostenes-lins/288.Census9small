@@ -111,6 +111,15 @@ at the opening of Section 15, titled {\em Open Problems:}\\
  up to 9 edges, see Theorem \ref{theorem:census9}. An important fact is that there is
  a polynomial algorithm to make available the canonical form of any manifold
  induced by plane graphs at the current level of the catalogue (currently 9 edges).
+ 
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=11cm]{A.figs/blinklinkgem.pdf} 
+\caption{\sf A blink-link-gem trio}
+\label{fig:blinklinkgem}
+\end{center}
+\end{figure} 
+ 
 
 
  \section{Encoding closed orientable 3-manifolds by plane graphs}
@@ -125,48 +134,82 @@ at the opening of Section 15, titled {\em Open Problems:}\\
  for blinks of the one for framed links on Kirby's calculus
  (\cite{kirby1978calculus}) using Fenn and Rourke moves for the calculus, \cite{fenn1979kirby} 
  recently published by Martelli, \cite{martelli2012finite}.
- No doubt that blinks are simple. But after Martelli's reformulation we see that they hold
- in their gist the mystery of 3-manifolds.
+ No doubt that blinks are simple mathematical objects. 
+ However, as a consequence of Martelli's reformulation of Kirby's calculus, we see that they hold,
+ in their gist, the mystery of 3-manifolds.
+ 
+  \begin{figure}[!h]
+\begin{center}
+\includegraphics[width=11cm]{A.figs/FennRourkeMove.pdf} 
+\caption{\sf Case n=3 of the Fenn-Rourke Move}
+\label{fig:FennRourkeMove}
+\end{center}
+\end{figure} 
+ 
+ 
+ \begin{figure}[!h]
+\begin{center}
+\includegraphics[width=11cm]{A.figs/Martelli.pdf} 
+\caption{\sf Martelli's finite set of 14 local moves, 
+Reidemeister moves 2 and 3 and their inverse are not shown}
+\label{fig:Martelli}
+\end{center}
+\end{figure} 
  
  In a grounding breaking work, Lickorish in 1962, \cite{lickorish1962representation}, proved that
- each closed orientable 3-manifold can be encoded by a link in $\mathbb{S}^ 3$ 
+ each closed orientable 3-manifold $\mathbb{M}^3$ can be encoded by a link in $\mathbb{S}^ 3$ 
  where each one of its $k$ components
  is endowed with an irreducible fraction (the framing) $\frac {\pm p}{q}$ 
  where $q$ could be 0, and in the case the fraction
  becomes $\pm \infty$. To construct the 3-manifold $\mathbb{M}^3$ 
  from the framed link we act as follows: after removing 
  an $\epsilon$-neighborhood of each link component we are left with 
- $\mathbb{S}^ 3\backslash (\mathbb{S}^ 1 \times \mathbb{D}^2)_k$. The fraction specifies, in the 
+  $\mathbb{M}^ 3\backslash (\mathbb{S}^ 1 \times \mathbb{D}^2)_k=
+  \mathbb{S}^ 3\backslash (\mathbb{S}^ 1 \times \mathbb{D}^2)_k$. The fraction specifies, in the 
  toroidal boundary inside $\mathbb{S}^ 3$, the homology type $(\pm p,q)$ of the curve that
- we want to be contractible in the solid torus inside $\mathbb{M}^3$. For each component, we then
+ is contractible in the solid torus inside $\mathbb{M}^3$. For each component, we then
  identify the curve given by the pair with the meridian of a canonical copy of a 
- solid torus in $\mathbb{R}^ 3$  to as to completely specify the closing of each toroidal hole.
+ solid torus in $\mathbb{R}^ 3$  so as to completely specify the pasting of the solid torus 
+ closing the toroidal hole.
+ Lickorish's breakthrough was to prove that any $\mathbb{M}^3$ has inside it a finite number
+ $k$ of disjoint solid tori so that $\mathbb{M}^ 3\backslash (\mathbb{S}^ 1 \times \mathbb{D}^2)_k=
+  \mathbb{S}^ 3\backslash (\mathbb{S}^ 1 \times \mathbb{D}^2)_k$.
  
  
   \begin{proposition}
-  Given any fractional framed link it is possible to obtain an integer framed link
+  Given any fractional framed link it is possible to obtain, by an effective algorithm,
+  an integer framed link
   inducing the same 3-manifold.
  \end{proposition}
  \begin{proof}
-  See \cite{rolfsen2003knots} for the proof and a simple complete example in \cite{lins1995gca}.
+  See \cite{rolfsen2003knots} for an algorithmic proof and a simple complete example 
+  in page 79 of \cite{lins1995gca}, which illustrate the general algorithm.
+  This example relates to the closed hyperbolic orientable 3-manifold with smallest 
+  volume known, \cite{hodgson1994symmetries}.
+  
  \end{proof}
  
- A {\em blackboard framed link} is an integer framed link, given as a projection in the plane 
- (with upper and lower
- strands recorded) where the framing of a component the algebraic sum of the signs of 
- the self-crossings of the 
- component.
+ A {\em blackboard framed link} is an integer framed link, given as a fixed projection in the plane 
+ (with upper and lower strands recorded) where the integer framing of a component is 
+ the algebraic sum of the signs of its self-crossings.
  
  \begin{proposition}
   Given any integer framed link it is possible to obtain a blackboard framed link
   inducing the same 3-manifold.
  \end{proposition}
  \begin{proof}
-  Just introduce an adequate set of positive and negative curls to the components
+  Just introduce an adequate set of positive or negative curls to the components
   to have their self-writhes agreeing with the required integer framing.
  \end{proof}
 
 
+ \begin{figure}[!h]
+\begin{center}
+\includegraphics[width=8.5cm]{A.figs/linkblink.pdf} 
+\caption{\sf Obtaining the blink from the link. The inverse procedure is straighforward.}
+\label{fig:linkblink}
+\end{center}
+\end{figure} 
  
  \section{A formal calculus on blinks}
   
@@ -183,7 +226,7 @@ associated blackboard framed link). There are a grand total of 64 moves,
 because each move goes from left to right (which names the moves) or from right to left 
 (its inverse move, which must have a $-1$ exponente)
 in each one of the 32 pairs.
-For each move a local disk (named coin) with an internal specific
+For each move a local disk (named {\em coin}) with an internal specific
 configuration is replaced by another coin with another internal specific configuration.
 The complement of the disk contains a completely arbitrary blink whose intersection
 with the the internal blink is formed by some isolated attachment vertices represented by small
@@ -193,14 +236,18 @@ corresponding to Reidemeister move 2 in the blackboard framed link,
 the replacing coin is a disk; in the four exceptional moves 
 one disk becomes a pinched disk (or vice-versa), but this causes no harm. 
 We made no effort in minimizing the number of moves.
-For instance moves $\pm\rho_{3}$ and $\pm\rho_{3}^\star$ 
-$\pm\alpha_{31}$ and $\pm\alpha_{31}^\star$ are equivalent because the moves are self-dual. 
+For instance moves $\pm\rho_{3}$, $\pm\rho_{3}^\star$  and
+$\pm\alpha_{3}$, $\pm\alpha_{3}^\star$ are equivalent because they are self-dual. 
 As a matter of fact, beyound the self-dual moves we can show that every 
-$\alpha_{ij}^ \star$ move is redundant by global considerations. The last 4 tyoes of moves,
-on the contrary of the previous ones are not direct translations from Martelli' s calculus
+$\alpha_{ij}^ \star$ move is redundant by global considerations. The last 4 types of moves,
+on the contrary of the previous ones, are not direct translations from Martelli' s calculus
 restricted to blackboard framed links. However it is easy to show that our whole set of moves
-imply and are implied by the direct translation of Martelli' s. All last four types of
-moves are more convenient, because they maintain the number of edges.
+imply and are implied by the direct translation of Martelli' s. Our last four types of
+moves seem more convenient as compared with those of Martelli's, 
+because they maintain the number of edges and are either self-dual, 
+$\{\pm \alpha_3,\pm \alpha_3^\star\}$ involving 6 edges,
+or clearly involutions, the biggest ones involving 9 edges, 
+$\{\pm \alpha_4,\pm \alpha_4^\star\}$ .
 }
 \label{fig:blinkcalculus}
 \end{center}
@@ -209,17 +256,20 @@ moves are more convenient, because they maintain the number of edges.
 \eject
 
 \begin{theorem} Two blinks represent the same oriented closed 3-manifold if and only if
-  they are linked by a finite sequence where each term is one 
-  $\{\pm \rho_2, \pm \rho_2^\star, \pm \rho_3, \pm\alpha_{01} \}$
-  of Fig. \ref{fig:blinkcalculus} or their inverses.
+  they are linked by a finite sequence where each term is in the subset 
+  $$\{\pm \rho_2, \pm \rho_2^\star, \pm \rho_3, \pm\alpha_{0}, \pm\beta_{1},
+  \pm\alpha_{1}, \pm\alpha_{2},  \pm\alpha_{3}, \pm\alpha_{4} \}
+  $$   of Fig. \ref{fig:blinkcalculus} or their inverses.
 \end{theorem}
 \begin{proof}
- The moves are basically a reformulation of Martelli's calculus. The only difference is that
- we have made them entirely local as disks replacements and treat the oriented case
- at the expense of increasing the types of moves.
+ The moves are basically a reformulation for blinks of the calculus 
+ in \cite{martelli2012finite} restricted to blackboard framed links.
+ The only difference are in moves $\pm \alpha_3,\pm \alpha_3^\star$ and 
+ $\pm \alpha_4,\pm \alpha_4^\star$ which can be  easily checked to produce an equivalent
+ set of moves for blackboard framed links as those of Martelli's.
 \end{proof}
 
-Any plane drawing of a graph with an arbitrary bipartition of its edge set, a blink,
+Any plane drawing whatsoever of a graph with an arbitrary bipartition of its edge set, that is, a blink,
 corresponds to a unique closed oriented 3-manifold via the associated 
 blackboard framed links. An important aspect
 about blinks is that each one possesses an easily obtainable {\em canonical form}
@@ -231,7 +281,7 @@ in L. Lins' thesis, \cite{lins2007blink}.
 \begin{center}
 \includegraphics[width=6.5cm]{A.figs/doglikeblink.pdf} 
 \raisebox{1.7cm}{
-$\mapright{unique\  representative}{algorithm \ (canonical \ form \ of \ blink)}$ }
+$\mapright{unique\  representative\ algorithm} {yielding\ the\ canonical \ form \ of \ the\ blink}$ }
 \includegraphics[width=3cm]{A.figs/repdoglikeblink.pdf} 
 \caption{\sf Blink representative algorithm: doglike blink with 27 edges and its representative with 25 edges.}
 \label{fig:doglikeblink}
@@ -246,9 +296,12 @@ an arbitrary partition of its edges (here presented as colors black and gray) in
 defined closed oriented 3-manifold. Moreover each such a manifold is induced by a blink (in fact, by infinite blinks).
 An {\em $n$-small} is a closed, orientable, and prime
 3-manifold is a manifold induced by a blink with at most $n$ edges.
-Relative to \cite{lins2007blink} the blinks of next theorem have receive two additions, the representative blinks
-$U[1563]$ and $U[2165]$.
-This is because the HGnQI-classes $9_{126}$ and $9_{199}$ of \cite{lins2007blink} split
+Relative to \cite{lins2007blink} the blinks of next theorem 
+have receive two additions, the representative blinks
+$U[1563]$ and $U[2165]$. Also the previous HG12QI-class $6_{5}$ became the homemorphism class $0_1$
+corresponding to $\mathbb{S}^2 \times \mathbb{S}^1$. We have decreased by 1 the numbering of the 
+$HG12QI$-classes $6_{6}, 6_{7}, \ldots, 6_{20}$ become the homeomorphisms classes  $6_{5}, 6_{7}, \ldots, 6_{19}$.
+This is because the HG12QI-classes $9_{126}$ and $9_{199}$ of \cite{lins2007blink} split
 into two topological classes. An objective of the present work is to prove that the splitings indeed take place.
 
 We observe that the blinks are enlarged in the appendix, showing them together with the
