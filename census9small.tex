@@ -109,10 +109,8 @@ at the opening of Section 15, titled {\em Open Problems:}\\
  to be defined. Lexicography is used to define a representative unique plane graph (a canonical form) 
  for each closed oriented 3-manifold. We explicitly solve the segmented problem 
  up to 9 edges, see Theorem \ref{theorem:census9}. An important fact is that there is
- a polynomial algorithm to make available the canonical form of any manifold
+ an efficient algorithm to make available the canonical form of any manifold
  induced by plane graphs at the current level of the catalogue (currently 9 edges).
- 
-
  
 
 
@@ -125,7 +123,7 @@ at the opening of Section 15, titled {\em Open Problems:}\\
  \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=11cm]{A.figs/blinklinkgem.pdf} 
-\caption{\sf A blink-link-gem trio}
+\caption{\sf The minimum blink, minimum link and minimum gem inducing the binary tetrahedral space}
 \label{fig:blinklinkgem}
 \end{center}
 \end{figure} 
@@ -135,7 +133,7 @@ at the opening of Section 15, titled {\em Open Problems:}\\
  encodings of a 3-manifold, the blink is the one that has the smallest ``perceptual complexity'',
  see Fig. \ref{fig:blinklinkgem}. Also, blinks are very easy to generate recursively. They have a rich
  simpifying theory which permits the generation of 3-manifold catalogues. 
- Their isomorphism problem is computationally  simple.
+ Yet, their isomorphism problem is computationally  simple.
  
  We make here explicit for the first time that each class of homeomorphic 
  closed oriented 3-manifolds is a subtle class
@@ -145,28 +143,31 @@ at the opening of Section 15, titled {\em Open Problems:}\\
  (\cite{kirby1978calculus}) using Fenn and Rourke moves for the calculus, \cite{fenn1979kirby} 
  recently published by Martelli, \cite{martelli2012finite}.
  No doubt that blinks are simple mathematical objects. 
- However, as a consequence of Martelli's reformulation of Kirby's calculus, we see that they hold,
+ Nevertheless, as a consequence of Martelli's reformulation of Kirby's calculus, we see that they hold,
  in their gist, the mystery of 3-manifolds.
  
-  \begin{figure}[!h]
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[width=11cm]{A.figs/FennRourkeMove.pdf} 
 \caption{\sf Case n=3 of the Fenn-Rourke Move}
 \label{fig:FennRourkeMove}
 \end{center}
 \end{figure} 
- 
- 
- \begin{figure}[!h]
+
+Reformulation of the original Kirby's moves and of the Fenn-Rourke move 
+for blackboard framed links are worked by Kauffman in
+\cite{kauffman1991knots}.
+\begin{figure}[!h]
 \begin{center}
-\includegraphics[width=11cm]{A.figs/Martelli.pdf} 
-\caption{\sf Martelli's finite set of 14 local moves, 
-Reidemeister moves 2 and 3 and their inverse are not shown}
+\includegraphics[width=14cm]{A.figs/Martelli.pdf} 
+\caption{\sf Martelli's finite set of 14 local moves for framed links.
+The ribbon move is redundant in the calculus, since the configurations
+are in $\mathbb{R}^ 3$. It is included to help the translation 
+to blinks, which is a strictly planar calculus.}
 \label{fig:Martelli}
 \end{center}
 \end{figure} 
- 
- In a grounding breaking work, Lickorish in 1962, \cite{lickorish1962representation}, proved that
+  In a grounding breaking work, Lickorish in 1962, \cite{lickorish1962representation}, proved that
  each closed orientable 3-manifold $\mathbb{M}^3$ can be encoded by a link in $\mathbb{S}^ 3$ 
  where each one of its $k$ components
  is endowed with an irreducible fraction (the framing) $\frac {\pm p}{q}$ 
@@ -178,7 +179,7 @@ Reidemeister moves 2 and 3 and their inverse are not shown}
   \mathbb{S}^ 3\backslash (\mathbb{S}^ 1 \times \mathbb{D}^2)_k$. The fraction specifies, in the 
  toroidal boundary inside $\mathbb{S}^ 3$, the homology type $(\pm p,q)$ of the curve that
  is contractible in the solid torus inside $\mathbb{M}^3$. For each component, we then
- identify the curve given by the pair with the meridian of a canonical copy of a 
+ identify the simple curve given by the homological base pair with the meridian of a canonical copy of a 
  solid torus in $\mathbb{R}^ 3$  so as to completely specify the pasting of the solid torus 
  closing the toroidal hole.
  Lickorish's breakthrough was to prove that any $\mathbb{M}^3$ has inside it a finite number

@@ -18,45 +18,45 @@ I was expecting a `,' or a `}'---line 6257 of file bibtexIndex.bib.bib
  : %160
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 17 entries,
+You've used 18 entries,
             2118 wiz_defined-function locations,
-            598 strings with 6053 characters,
-and the built_in function-call counts, 4251 in all, are:
-= -- 404
-> -- 166
-< -- 2
-+ -- 71
-- -- 50
-* -- 236
-:= -- 747
-add.period$ -- 49
-call.type$ -- 17
-change.case$ -- 70
+            603 strings with 6140 characters,
+and the built_in function-call counts, 4477 in all, are:
+= -- 424
+> -- 173
+< -- 3
++ -- 74
+- -- 52
+* -- 247
+:= -- 786
+add.period$ -- 52
+call.type$ -- 18
+change.case$ -- 73
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 181
-empty$ -- 373
-format.name$ -- 50
-if$ -- 877
+cite$ -- 18
+duplicate$ -- 193
+empty$ -- 395
+format.name$ -- 52
+if$ -- 925
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 21
-newline$ -- 86
-num.names$ -- 34
-pop$ -- 96
+int.to.str$ -- 18
+missing$ -- 23
+newline$ -- 91
+num.names$ -- 36
+pop$ -- 103
 preamble$ -- 1
-purify$ -- 59
+purify$ -- 62
 quote$ -- 0
-skip$ -- 123
+skip$ -- 130
 stack$ -- 0
-substring$ -- 189
-swap$ -- 19
-text.length$ -- 2
+substring$ -- 194
+swap$ -- 21
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
+type$ -- 58
 warning$ -- 0
-while$ -- 43
-width$ -- 19
-write$ -- 176
+while$ -- 45
+width$ -- 20
+write$ -- 187
 (There were 3 error messages)
