@@ -174,6 +174,8 @@ at the opening of Section 15, entitled {Open Problems:}
  (at a computational level) whether two 3-manifolds are or are not homeomorphic. And census
  become available!
  
+
+ 
  We make here explicit for the first time that each class of homeomorphic 
  closed oriented 3-manifolds is a subtle class
  of blinks where two membres of each class is linked by means of a small number of local simple moves. 
@@ -207,7 +209,7 @@ The box marked with $+1$ (-1) indicates one full counterclockwise (clockwise) tw
 \begin{center}
 \includegraphics[width=14cm]{A.figs/Martelli.pdf} 
 \caption{\sf Martelli's finite set of 14 local moves for framed links.
-The ribbon move is redundant in the calculus, since the configurations
+The ribbon move and the Reidemeister moves are redundant in the calculus, since the configurations
 are in $\mathbb{R}^ 3$. It is included to help the translation 
 to blinks, which is a strictly planar calculus.}
 \label{fig:Martelli}
@@ -270,8 +272,30 @@ to blinks, which is a strictly planar calculus.}
  
  \section{A formal calculus on blinks}
   
-  \begin{figure}[!h]
-   \begin{center}
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=8cm]{A.figs/FennRourkeMove.pdf} 
+\caption{\sf The Fenn-Rourke single $n$-parametrized 
+move: a topological blow-down in the number of components. 
+The number $n\ge0$ of vertical
+strands crossing the unknot is arbitrary (here $n=3$).
+The box marked with $+1$ (-1) indicates one full counterclockwise (clockwise) twist.}
+\label{fig:FennRourkeMove}
+\end{center}
+\end{figure} 
+
+
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=12cm]{A.figs/MartelliReformulationLinks.pdf} 
+\caption{\sf Reformulation of moves $A_3$ and $A_4$ into $a_3$ and $a_4$}
+\label{fig:MartelliReformulationLinks}
+\end{center}
+\end{figure}
+  
+\begin{figure}[!h]
+\begin{center}
 \includegraphics[width=16cm]{A.figs/blinkcalculus.pdf}
 \caption{\sf{\bf  Blink-coin reformulation of Martelli's calculus}:
 there are 8 types of moves, each having four moves, a total of 32 local inverse pairs of moves.
@@ -310,7 +334,6 @@ $\{\pm \alpha_4,\pm \alpha_4^\star\}$ .
 \end{center}
 \end{figure} 
 
-\eject
 
 \begin{theorem} Two blinks represent the same oriented closed 3-manifold if and only if
   they are linked by a finite sequence where each term is in the subset 
@@ -405,7 +428,7 @@ The topological classification of the 9-small spaces was nearly completed in
 \cite{lins2007blink}. This work develops a theory for generating a distinguished
 set of blinks named $U_n$ and indexed lexicographically, $U_n[i]$ is the $i$-th such blink.
 The relevance of $U_n$ is that it misses no closed, orientable, prime and irreducible
-3-manifold which is induced by a blink up to $n$-edges. 
+3-manifold which is induced by a blink up to $n$ edges. 
 
 The 3-manifolds of \cite{lins2007blink} are classified by homology and the quantum WRT$_r$-invariants
 $r=3,\ldots,u$, with $10$ significant decimal digits forming $HGuQI$-classes of blinks. 
@@ -431,7 +454,7 @@ known to be homeomorphic by BLINK.}
 \end{center}
 \end{figure} 
 
-The first solution that I got, and that still blows my mind,  
+The first solution that we got, and that still blows our mind,  
 was by Craig Hodgson using length spectra techniques, based in his
 joint paper with J. Weeks entitled {\em Symmetries, 
 isometries and length spectra of closed hyperbolic three-manifolds} 
@@ -464,12 +487,13 @@ Volume of both manifolds: 7.12868652133.
 A closed orientable 3-manifold is denoted {\em $n$-small} if it is induced by surgery on
 a blackboard framed link with at most $n$ crossings. We provide an instance of the general theory
 to produce a recursive indexation of $n$-small 3-manifolds up to homeomorphism. We solve this problem
-up to $n=9$. Conceptually we could go on forever, finding in the way tougher and tougher examples to be distinguished
+up to $n=9$. Conceptually we could go on forever, finding in the way 
+tougher and tougher examples to be distinguished
 by yet to be found new invariants.
  The topological classification of the 9-small 3-manifolds involve three invariants: 
  $$INV=\{{\ homology}, \ W\hspace{-0.5mm}RT_{12}, { \ length \ of\ smallest\  geodesic}\ \}.$$
  The classification was nearly complete in \cite{lins2007blink}, except for two doubts. Recently,
- after we put a Challenge in the arXiv, \cite{linslins2013A} these doubts were resolved by
+ after we posted a challenge in the arXiv, \cite{linslins2013A} these doubts were solved by
  M. Culler, N. Dunfield and C. Hodgson using SnapPy \cite{snappy}. This made us add 
  $$ \ length \ of\ smallest\  geodesic $$ 
  which we define as 0, if the manifold is not hyperbolic, to our list of invariants, 
@@ -477,12 +501,15 @@ by yet to be found new invariants.
  of page 15 of \cite{lins1995gca}:
  the $TS$- and $u^k$-moves yield an efficient algorithm to classify $n$-small 3-manifolds 
  by explicitly displaying homeomorphisms among them, whenever they exist. In the second of these
- conjectures $k=1$. A recent finding by C. Hodgson concerning manifolds $T[71]$ and $T[79]$
- in the notation of \cite{lins2007blink} shows that the 3 invariants are not enough to
- decide the pair. This pair is the first one of 11 pairs that we treat in some tougher challenges
+ conjectures $k=1$. A recent finding by C. Hodgson concerning manifolds $T[71]$ and $T[79]$ forming the 
+ HG8QI-class $14_{24}^t$, in the notation of page 239 of \cite{lins2007blink} shows that 
+ the 3 invariants are not enough to
+ decide the pair. This pair is the first one of 11 pairs that we display as some tougher challenges
  to 3-manifold topologists, \cite{lins2013}. Craig's finding is that the volume as well as the
  lengths of the smallest geodesics fail to distinguish $T[71]$ and $T[79]$. He proves them 
- to be non-homeomorphic by more sofisticated ideas. N. Dunfield also showed that $T[71]$ and $T[79]$
+ to be non-homeomorphic by more sofisticated techniques, involving drilling along the smallest geodesics
+ to get non-isometric manifolds with toroidal boundary. Using SnapPy, GAP and Sage, 
+ N. Dunfield shows that $T[71]$ and $T[79]$
  are distinguished by its 5-covers.
 
 % 
