@@ -3,60 +3,63 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: census9small.aux
 The style file: plain.bst
 Database file #1: bibtexIndex.bib.bib
-I was expecting a `,' or a `}'---line 1035 of file bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 1077 of file bibtexIndex.bib.bib
  : 
  : @article{joli2012B,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1329 of file bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 1371 of file bibtexIndex.bib.bib
  : 
  : @article{polyak2010minimal,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 6257 of file bibtexIndex.bib.bib
+I was expecting a `,' or a `}'---line 6299 of file bibtexIndex.bib.bib
  : 
  : %160
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 18 entries,
+Warning--I didn't find a database entry for "linslins2013A"
+Warning--empty journal in friedl3
+Warning--empty year in friedl3
+You've used 26 entries,
             2118 wiz_defined-function locations,
-            603 strings with 6140 characters,
-and the built_in function-call counts, 4477 in all, are:
-= -- 424
-> -- 173
+            649 strings with 7056 characters,
+and the built_in function-call counts, 6626 in all, are:
+= -- 645
+> -- 241
 < -- 3
-+ -- 74
-- -- 52
-* -- 247
-:= -- 786
-add.period$ -- 52
-call.type$ -- 18
-change.case$ -- 73
++ -- 102
+- -- 72
+* -- 388
+:= -- 1148
+add.period$ -- 75
+call.type$ -- 26
+change.case$ -- 105
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 193
-empty$ -- 395
-format.name$ -- 52
-if$ -- 925
+cite$ -- 28
+duplicate$ -- 274
+empty$ -- 586
+format.name$ -- 72
+if$ -- 1366
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 23
-newline$ -- 91
-num.names$ -- 36
-pop$ -- 103
+int.to.str$ -- 26
+missing$ -- 29
+newline$ -- 130
+num.names$ -- 52
+pop$ -- 135
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 87
 quote$ -- 0
-skip$ -- 130
+skip$ -- 187
 stack$ -- 0
-substring$ -- 194
-swap$ -- 21
+substring$ -- 356
+swap$ -- 29
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 58
-warning$ -- 0
-while$ -- 45
-width$ -- 20
-write$ -- 187
+type$ -- 90
+warning$ -- 2
+while$ -- 71
+width$ -- 28
+write$ -- 269
 (There were 3 error messages)

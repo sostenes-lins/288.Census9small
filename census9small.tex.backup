@@ -62,8 +62,8 @@ We hope that this census becomes as useful for the study of concrete examples of
 as the tables of knots are in the study of knots and links. Along the years we have made an issue
 in our computational work that it must be reproducible and independently checked by other researchers. 
 Our software {\sf BLINK} is available,
-but currently it lacks yet a good documentation and help is welcome to change this. An Wiki open source project
-is starting.
+but currently it lacks yet a good documentation and help is welcome to change this. 
+An Wiki open source project is starting.
 
 
 \end{abstract}
@@ -75,26 +75,45 @@ After presenting some instances of closed 3-manifolds,
 P. Alexandroff says in the English translation (1961) of 
 his joint work with D. Hilbert \cite{alexandrov1961elementary}, first
 published (1932) in German, \cite{alexandroff1932einfachste}:
-``These few examples will suffice. Let it be remarked here that, at present,
+{\em ``These few examples will suffice. Let it be remarked here that, at present,
 in contrast with the two-dimensional case, the problem of enumerating the 
 topological types of manifolds of three and more dimensions is in an apparently 
 hopeless state. We are not only far removed from the solution, but even from the first step
-toward a solution, a plausible conjecture''.
+toward a solution, a plausible conjecture''.}
 
 
 John Hempel in his book (1976) {\em 3-Manifolds} \cite{hempel1976} writes 
-at the opening of Section 15, titled {\em Open Problems:}\\
-``The ultimate goal of the theory would be in providing solutions to:
+at the opening of Section 15, entitled {Open Problems:}
+{\em ``The ultimate goal of the theory would be in providing solutions to:
  {\em The homeomorphism problem}: provide an {\em effective} procedure
  for determining whether two {\em given} 3-manifolds are homeomorphic, together with
  {\em The classification problem}: {\em effectively} generate a list containing
- exactly one 3-manifold from each homeomorphism class.''
+ exactly one 3-manifold from each homeomorphism class.''}
  
  
  It is amazing how much the picture has changed in the 80 years since Alexandroff's-Hilbert book.
- The progress was due to the deep  breakthroughs in the 1950's and 1960's, 
- starting in the early 1980's of W. Thurston,
- in the early 2000's, G. Perelman, and more recently 2010's, I. Agol and many others. 
+ The progress was due to the deep advances in the 1950's and 1960's, starting with
+ the proof that 3-manifolds are triangulable by Moise (1952), \cite{moise1952affine}. Next 
+ the presentation
+ of them by framed links by Lickorish (1962) \cite{lickorish1962representation}.
+ Following that Kirby presented its calculus for framed links (1978)\cite{kirby1978calculus}. 
+ starting in the early 1980's W. Thurston's breakthroughs, developing his conceptual theory 
+ on hyperbolic manifolds and of the geometrization conjecture. 
+ In the final 1980's early 1990's Witten \cite{witten1989quantum} broke the psicological 
+ barrier that there were no good invariants for 3-manifolds. Following that a number of 
+ eastern European mathematicians like N. Reshetikhen, V. Turaev and O. Viro, 
+ \cite{turaev1992state,reshetikhin1991invariants}
+ using quantum groups were able to put in mathematical solid ground Witten's findings.
+ One of us, S. Lins, was a witness of the excitement these developments caused. L. H. Kauffman
+ and W. B. R. Lickorish discovered the relationship of the Temperley-Lieb algebra with the new invariants,
+ \cite{lickorish1991three}. Starting with a sabatical leave in to Chicago in 1990, S. Lins produced
+ the joint monography with Kauffman \cite{kauffman1994tlr}, where blinks are first defined 
+ and extensive WRT-invariant computations were obtained from the theory developed from scratch,
+ independently and simpler that that of quantum groups.  In the early 
+ 2000's, G. Perelman revolutionized the field proving Poincaré's Conjecture and
+ Thurston's Geometrization Conjecture. More recently in the 2010's, I. Agol is leading the field
+ in this era post-Perelman. Of course, this is only a diagonal list of researchers. Many more have contributed and
+ some are  extremely active in this era Pós-Perelman, \cite{friedl3}. 
  Currently there is a great amount of important reserch issues
  going on and these are exciting times for 3-manifold theory. See the recent essay of E. Klarreich
  in the Simons Foundation, \cite{Klarreich1012}.
@@ -103,22 +122,24 @@ at the opening of Section 15, titled {\em Open Problems:}\\
  We present here our modest contribution to the topic.
  It is placed in the confluency of two deep research passions of the authors, apparently very far apart:
  The study of closed orientable 3-manifolds and the study of plane 
- graphs. We mean to provide a road for a segmented answer for Hempel's questions. 
+ graphs. We mean to provide a strategy for a segmented answer of Hempel's questions. 
  The closed oriented 3-manifolds are partitioned
  by the number of edges in a minimum encoding of them by a certain class of plane graphs, shortly
  to be defined. Lexicography is used to define a representative unique plane graph (a canonical form) 
  for each closed oriented 3-manifold. We explicitly solve the segmented problem 
- up to 9 edges, see Theorem \ref{theorem:census9}. An important fact is that there is
- a polynomial algorithm to make available the canonical form of any manifold
- induced by plane graphs at the current level of the catalogue (currently 9 edges).
- 
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[width=11cm]{A.figs/blinklinkgem.pdf} 
-\caption{\sf A blink-link-gem trio}
-\label{fig:blinklinkgem}
-\end{center}
-\end{figure} 
+ up to 9 edges, see Theorem \ref{theorem:census9}. This work provides 
+ an efficient algorithm to make available the canonical form of any closed orientable 3-manifold
+ induced by plane graphs at the current level of the catalogue (currently 9 edges) and, theoretically, this
+ could be extended 10, 11,\ldots, $n$, for arbitrarily large $n$. Our theory gives a road to effectively
+ name each 3-manifold classified by some set of invariants $INV$. We have a universal set of object, the blinks up
+ to $n$ edges, which can be partitioned by these invariants. The $INV$-classes are then tried to be broken into
+ homeomorphisms classes. New invariants are then discovered and added to $INV$ making them homeomorphisms classes 
+ of $n$-small manifolds. The difficult cases are going to appear naturally and they lead to enhancement of
+ the theory. It is not at all impossible that this process stops and we get $INV$ so 
+ that the $INV$-classes be proved to  be homeomorphisms classes for all $n$. The point we want to make is that 
+ good examples (hard to find) are important in obtaining progress in a general theory.
+ The classifying $INV$ for the 9-small 3-manifolds is
+ $$INV=\{{\ homology}, W\hspace{-0.5mm}RT_{12}, { \ length \ of\ smallest\  geodesic}\ \}.$$
  
 
 
@@ -126,37 +147,73 @@ at the opening of Section 15, titled {\em Open Problems:}\\
  Unexplored simplicity. This was the reason for birth of this work. A {\em blink} is a plane
  graph with an arbitrary bipartition of its edges in gray and black. Even though this object
  is around since 1994 when it was introduced in the joint research monography of L. Kauffman and
- S. Lins, \cite{kauffman1994tlr}, they remain largely unkown. 
+ S. Lins, \cite{kauffman1994tlr}, the fact that they encode oriented closed 3-manifolds remains basically unkown.
+ 
+ \begin{figure}[!h]
+\begin{center}
+\includegraphics[width=11cm]{A.figs/blinklinkgem.pdf} 
+\caption{\sf The minimum blink, minimum link and minimum gem inducing the binary tetrahedral space}
+\label{fig:blinklinkgem}
+\end{center}
+\end{figure} 
+
+ Blinks are in 1-1 correspondence with blackboard framed links which in turn encodes in a very 
+ simple way an specific 3-gem inducing the 3-manifold. If we consider these three
+ encodings of a 3-manifold, the blink is the one that has the smallest ``perceptual complexity'',
+ see Fig. \ref{fig:blinklinkgem}. Also, blinks are very easy to generate recursively. They have a rich
+ simpifying theory which permits the generation of 3-manifold catalogues. 
+ Yet, their isomorphism problem is computationally  simple. Being blinks so good, why do we need gems? The 
+ answer is that to prove that blinks induce the same 3-manifold (when they do) remains very difficult. It is 
+ straighforward to obtain a canonical gem from a blink. Proving that two gems induce the same
+ 3-manifold (when they do) is much easier because of the rich simplification theory of them (based
+ on at least 4 intertwined planarities) leading to the attractors of 3-manifolds, \cite{lins1995gca}.
+ Blinks are very good at proving that two manifolds are distinct, because from them we can extract
+ the WRT-invariants, which are very strong invariants, yet not a complete one. These invariants 
+ do not have a direct computation from triangulations, including gems. Thus, gems and 
+ blinks collaborate in a symbiotic dance to decide 
+ (at a computational level) whether two 3-manifolds are or are not homeomorphic. And census
+ become available!
+ 
  We make here explicit for the first time that each class of homeomorphic 
  closed oriented 3-manifolds is a subtle class
  of blinks where two membres of each class is linked by means of a small number of local simple moves. 
  Our moves (see Fig. \ref {fig:blinkcalculus}) are a slight reformulation 
  for blinks of the one for framed links on Kirby's calculus
  (\cite{kirby1978calculus}) using Fenn and Rourke moves for the calculus, \cite{fenn1979kirby} 
- recently published by Martelli, \cite{martelli2012finite}.
+ recently published by Martelli, \cite{martelli2012finite}. 
+ Reformulation of the original Kirby's moves and of the Fenn-Rourke move 
+for blackboard framed links are worked by Kauffman in
+\cite{kauffman1991knots}. I got influenced by Kauffman's insistence
+ in considering blackboard framed links \cite{kauffman1991knots} to use the plane to remove the 
+ number attached to the components, thus obtaining, esssentially, the blinks. 
  No doubt that blinks are simple mathematical objects. 
- However, as a consequence of Martelli's reformulation of Kirby's calculus, we see that they hold,
- in their gist, the mystery of 3-manifolds.
+ Nevertheless, as a consequence of Martelli's reformulation of Kirby's calculus as complemented by
+ Fenn-Rourke and Kauffman, I will prove shortly that they hold, in their gist, the mystery of 3-manifolds.
  
-  \begin{figure}[!h]
+\begin{figure}[!h]
 \begin{center}
-\includegraphics[width=11cm]{A.figs/FennRourkeMove.pdf} 
-\caption{\sf Case n=3 of the Fenn-Rourke Move}
+\includegraphics[width=8cm]{A.figs/FennRourkeMove.pdf} 
+\caption{\sf The Fenn-Rourke single $n$-parametrized 
+move: a topological blow-down in the number of components. 
+The number $n\ge0$ of vertical
+strands crossing the unknot is arbitrary (here $n=3$).
+The box marked with $+1$ (-1) indicates one full counterclockwise (clockwise) twist.}
 \label{fig:FennRourkeMove}
 \end{center}
 \end{figure} 
- 
- 
- \begin{figure}[!h]
+
+
+\begin{figure}[!h]
 \begin{center}
-\includegraphics[width=11cm]{A.figs/Martelli.pdf} 
-\caption{\sf Martelli's finite set of 14 local moves, 
-Reidemeister moves 2 and 3 and their inverse are not shown}
+\includegraphics[width=14cm]{A.figs/Martelli.pdf} 
+\caption{\sf Martelli's finite set of 14 local moves for framed links.
+The ribbon move is redundant in the calculus, since the configurations
+are in $\mathbb{R}^ 3$. It is included to help the translation 
+to blinks, which is a strictly planar calculus.}
 \label{fig:Martelli}
 \end{center}
 \end{figure} 
- 
- In a grounding breaking work, Lickorish in 1962, \cite{lickorish1962representation}, proved that
+  In a grounding breaking work, Lickorish in 1962, \cite{lickorish1962representation}, proved that
  each closed orientable 3-manifold $\mathbb{M}^3$ can be encoded by a link in $\mathbb{S}^ 3$ 
  where each one of its $k$ components
  is endowed with an irreducible fraction (the framing) $\frac {\pm p}{q}$ 
@@ -168,7 +225,7 @@ Reidemeister moves 2 and 3 and their inverse are not shown}
   \mathbb{S}^ 3\backslash (\mathbb{S}^ 1 \times \mathbb{D}^2)_k$. The fraction specifies, in the 
  toroidal boundary inside $\mathbb{S}^ 3$, the homology type $(\pm p,q)$ of the curve that
  is contractible in the solid torus inside $\mathbb{M}^3$. For each component, we then
- identify the curve given by the pair with the meridian of a canonical copy of a 
+ identify the simple curve given by the homological base pair with the meridian of a canonical copy of a 
  solid torus in $\mathbb{R}^ 3$  so as to completely specify the pasting of the solid torus 
  closing the toroidal hole.
  Lickorish's breakthrough was to prove that any $\mathbb{M}^3$ has inside it a finite number
@@ -306,13 +363,15 @@ into two topological classes. An objective of the present work is to prove that 
 
 We observe that the blinks are enlarged in the appendix, showing them together with the
 corresponding blackboard framed links. The notation $n_i$ attached to each blink below,
-is the name of its homeomorphism class, not merely its hgqi-class, as in \cite{lins2007blink}. 
+is the name of its homeomorphism class, not merely its HG12QI-class, as in \cite{lins2007blink}. 
 
 This paper concludes the proof of the following theorem: 
-\begin{theorem}
-Let $M^3$ be a closed, oriented and prime 3-manifold induced by a blink with at most 9 edges.
-Then $M^3$ is homeomorphic to exactly one of the 
-3-manifolds induced by the 489  blinks below. Morever all of these are pairwise non-homeomorphic.\\
+\begin{theorem}[The first 489 closed orientable 3-manifolds]
+Let $\mathbb{M}^3$ be a closed, oriented and prime 3-manifold induced by a blink with at most 9 edges.
+Then $\mathbb{M}^3$ is homeomorphic to exactly one of the 
+3-manifolds induced by the 489  blinks below. Morever all of these are pairwise non-homeomorphic.
+(However being redundant, we also present the corresponding census for the blackboard framed links. These census are
+enlarged in the Appendix)\\
 \includegraphics[width=17.5cm]{A.figs/primes489.pdf}\\
 \includegraphics[width=17.5cm]{A.figs/primes489links.pdf} 
 \label{theorem:census9}
@@ -334,7 +393,8 @@ A $\{j,k\}$-residue in a $4$-graph $G$ is a connected component of the subgraph 
 A 2-residue is a $\{j,k\}$-residue, for some distinct colors $j$ and $k$.
 A {\em gem} is a 4-graph $G$ such that for each color $i$, $G\backslash E_i$ can be embedded in the plane 
 such that the boundary of each face is a 2-residue. From a gem there exists a straightforward
-algorithm to obtain a closed orientable 3-manifold, in two different, dual ways. Every such a manifold is obtainable in this way.
+algorithm to obtain a closed orientable 3-manifold, in two different, dual ways. 
+Every such a manifold is obtainable in this way.
 An unecessary big gem is obtained from a triangulation $T$ for a manifold by taking the dual of the 
 barycentric subdivision of $T$. Here the colors corresponds to the dimensions. Doing simplifications in the gem
 completely destroys this correspondence.
@@ -345,28 +405,99 @@ The topological classification of the 9-small spaces was nearly completed in
 \cite{lins2007blink}. This work develops a theory for generating a distinguished
 set of blinks named $U_n$ and indexed lexicographically, $U_n[i]$ is the $i$-th such blink.
 The relevance of $U_n$ is that it misses no closed, orientable, prime and irreducible
-3-manifold which is induced by a blink with $n$-edges. 
+3-manifold which is induced by a blink up to $n$-edges. 
 
 The 3-manifolds of \cite{lins2007blink} are classified by homology and the quantum WRT$_r$-invariants
-$r=3,\ldots,u$, up to $d$ decimal digits forming $hgqi_u^d$-classes. Our algorithm for computing the 
-$WRT_r^d$-invariants are based on the theory developed in \cite{kauffman1994tlr}.
-
+$r=3,\ldots,u$, with $10$ significant decimal digits forming $HGuQI$-classes of blinks. 
+Our algorithm for computing the 
+$WRT_r^u$-invariants are based on the theory developed in \cite{kauffman1994tlr}.
 After 6 years we have put our doubts as a Challenge to topologists and 
-group algebraists, \cite{linslins2013A}.
-\cite{weeks2001snappea}
+group algebraists, \cite{linslins2013A}. They were quickly solved by some researchers among others
+M. Culler, N. Dunfield and C. Hodgson, at least in two different ways. They proved that the two pairs of
+manifolds which were left unresolved by BLINK are indeed non-homeomorphic. All the other pairs
+in the $HG12QI$-classes $9_{126}$ and $9_{199}$ have been checked to be homeomorphic, as BLINK proved
+6 years ago. The new solutions were obtained using the software \cite{snappy}, which uses 
+the kernel of \cite{weeks2001snappea}. They also use GAP (\cite{gap2002gap}) and Sage (\cite{sage2012}). 
  
  \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{A.figs/nine126.pdf}
 \includegraphics[width=8cm]{A.figs/nine199.pdf}
-\caption{\sf Solving the last two doubts in L. Lins's thesis. The latter are homeomorphic.}
+\caption{\sf The two wo doubts left in L. Lins's thesis are solved showing that BLINK alone provides
+the topological classification of the 9-small 3-manifolds. In both cases the manifolds induced
+by the shaded blink-link pairs are not homeomorphic to the others in the class. These are already
+known to be homeomorphic by BLINK.}
 \label{fig:nine126}
 \end{center}
 \end{figure} 
 
-The basic tool to differentiate the manifold is the software SnapPy, \cite{snappy}. 
+The first solution that I got, and that still blows my mind,  
+was by Craig Hodgson using length spectra techniques, based in his
+joint paper with J. Weeks entitled {\em Symmetries, 
+isometries and length spectra of closed hyperbolic three-manifolds} 
+(\cite{hodgson1994symmetries}). By using SnapPy Craig showed that even though the 
+quantum WRT-invariants as well as the volumes of the 
+hyperbolic $Z$-homology spheres induced by the blinks
+$U[1466]$ and $U[1563]$ are the same, the {\em length of the 
+smallest geodesics of them are distinct}. As for the other pair of blinks, $U[2125]$ and $U[2165]$, 
+the same facts apply. Here is a summary of Craig's findings extracted from the SnapPy session
+that he kindly sent me. As Craig writes: {\em ``The output of the length spectrum 
+command shows the {\em complex lengths}
+of closed geodesics --- the real part is the actual length and the imaginary part is the rotation angle
+as you go once around the geodesic.''}\\
+\begin{center}
+\center{Class $9_{126}$:}
+\begin{verbatim}
+First geodesic of U[1466]: 1.0152103824828331+0.39992347315914334i.
+First geodesic of U[1563]: 0.9359206605025168+2.333526236965665i.
+Volume of both manifolds: 7.36429600733.
+\end{verbatim}
+\center{Class $9_{199}$:}
+\begin{verbatim}
+First geodesic of U[2125]:  0.8939075859248593+0.761197185679321i.
+First geodesic of U[2165]:  0.7978548001747316+2.9487425029345973i.
+Volume of both manifolds: 7.12868652133.
+\end{verbatim}
+\end{center}
 
-\newpage .
+\section{Conclusion}
+A closed orientable 3-manifold is denoted {\em $n$-small} if it is induced by surgery on
+a blackboard framed link with at most $n$ crossings. We provide an instance of the general theory
+to produce a recursive indexation of $n$-small 3-manifolds up to homeomorphism. We solve this problem
+up to $n=9$. Conceptually we could go on forever, finding on the way tougher and tougher examples to be distinguished
+by yet to be found new invariants.
+ The topological classification of the 9-small 3-manifolds involve three invariants: 
+ $$INV=\{{\ homology}, \ W\hspace{-0.5mm}RT_{12}, { \ length \ of\ smallest\  geodesic}\ \}.$$
+ The classification was complete in \cite{lins2007blink}, except for two doubts. Recently,
+ after we put a Challenge in the arXiv, \cite{linslins2013A} these doubts were resolved by
+ M. Culler, N. Dunfield and C. Hodgson using SnapPy \cite{snappy}. This made us add 
+ $$ \ length \ of\ smallest\  geodesic $$ 
+ which we define as 0, if the manifold is not hyperbolic, to our list of invariants, 
+ The $9$-small 3-manifold classification maintains live the two Conjectures 
+ of page 15 of \cite{lins1995gca}:
+ the $TS$- and $u^k$-moves yield an efficient algorithm to classify $n$-small 3-manifolds 
+ by explicitly displaying homeomorphisms among them, whenever they exist. In the second of these
+ conjectures $k=1$. A recent finding by C. Hodgson conscerning manifolds $T[71]$ and $T[79]$
+ in the notation of \cite{lins2007blink} shows that the 3 invariants are not enough to
+ decide the pair.
+
+
+
+% 
+% Our bet is that both pairs of 3-manifolds in the 2 first sections of 
+% this short note are not homeomorphic. This would mean that the $9$-small manifolds are
+% completely classified and that
+% the combinatorial dynamics of Chapter 4 in \cite{lins1995gca} based 
+% on $TS$-moves which leads to a  (small, in the case of hyperbolic 3-manifolds)
+% number of minimal gems, named the {\em attractor of
+% the 3-manifold} is successful. This induces an efficient algorithm which 
+% is capable of classifying topologically all the 3-manifolds given as a blackboard framed link
+% with up to (so far) 9 crossings and maintains live the two Conjectures of page 15 of \cite{lins1995gca}:
+% the $TS$- and $u^n$-moves yield an efficient algorithm
+% to classify $n$-small 3-manifolds by explicitly displaying homeomorphisms, whenever they exist.
+
+
+\newpage
 \section{Appendix: census (no misses, no duplicates) of 9-small 3-manifolds}
 \subsection*{Part 1/4 in terms of blinks:}
 \center{\includegraphics[width=16.5cm]{A.figs/primes489m11.pdf}} \eject \noindent
@@ -383,27 +514,7 @@ The basic tool to differentiate the manifold is the software SnapPy, \cite{snapp
 \subsection*{Part 4/4 in terms of blinks:}
 \center{\includegraphics[width=16.5cm]{A.figs/primes489m22.pdf}} \eject
 \subsection*{Part 4/4 in terms of blackboard framed links:}
-\center{\includegraphics[width=16.5cm]{A.figs/primes489linksm22.pdf}} \eject
-
-
-%-----------------------------------
-%-----------------------------------
-
-
-\section{Conclusion}
-A closed orientable 3-manifold is denoted {\em $n$-small} if it is induced by surgery on
-a blackboard framed link with at most $n$ crossings.
-Our bet is that both pairs of 3-manifolds in the 2 first sections of 
-this short note are not homeomorphic. This would mean that the $9$-small manifolds are
-completely classified and that
-the combinatorial dynamics of Chapter 4 in \cite{lins1995gca} based 
-on $TS$-moves which leads to a  (small, in the case of hyperbolic 3-manifolds)
-number of minimal gems, named the {\em attractor of
-the 3-manifold} is successful. This induces an efficient algorithm which 
-is capable of classifying topologically all the 3-manifolds given as a blackboard framed link
-with up to (so far) 9 crossings and maintains live the two Conjectures of page 15 of \cite{lins1995gca}:
-the $TS$- and $u^n$-moves yield an efficient algorithm
-to classify $n$-small 3-manifolds by explicitly displaying homeomorphisms, whenever they exist.
+\center{\includegraphics[width=16.5cm]{A.figs/primes489linksm22.pdf}}\eject
 
 
 %-----------------------------------
