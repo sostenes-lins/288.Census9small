@@ -118,10 +118,42 @@ at the opening of Section 15, entitled {Open Problems:}
  2000's, G. Perelman revolutionized the field proving Poincaré's Conjecture and
  Thurston's Geometrization Conjecture. More recently in the 2010's, I. Agol is leading the field
  in this era post-Perelman. Of course, this is only a diagonal list of researchers. Many more have contributed and
- some are  extremely active in this era Pós-Perelman, \cite{friedl3}. 
+ some are  extremely active in this era pos-Perelman, \cite{friedl3}. 
  Currently there is a great amount of important reserch issues
  going on and these are exciting times for 3-manifold theory. See the recent essay of E. Klarreich
  in the Simons Foundation, \cite{Klarreich1012}.
+  
+  
+ \section{Encoding closed orientable 3-manifolds by plane graphs}
+ Unexplored simplicity. This was the reason for birth of this work. A {\em blink} is a plane
+ graph with an arbitrary bipartition of its edges in gray and black. Even though this object
+ is around since 1994 when it was introduced in the joint research monography of L. Kauffman and
+ S. Lins, \cite{kauffman1994tlr}, the fact that they encode oriented closed 3-manifolds remains basically unkown.
+ 
+ \begin{figure}[!h]
+\begin{center}
+\includegraphics[width=11cm]{A.figs/blinklinkgem.pdf} 
+\caption{\sf The minimum blink, minimum link and minimum gem inducing the binary tetrahedral space}
+\label{fig:blinklinkgem}
+\end{center}
+\end{figure} 
+
+ Blinks are in 1-1 correspondence with blackboard framed links which in turn encodes in a very 
+ simple way an specific 3-gem inducing the 3-manifold. If we consider these three
+ encodings of a 3-manifold, the blink is the one that has the smallest ``perceptual complexity'',
+ see Fig. \ref{fig:blinklinkgem}. Also, blinks are very easy to generate recursively. They have a rich
+ simpifying theory which permits the generation of 3-manifold catalogues. 
+ Yet, their isomorphism problem is computationally  simple. Being blinks so good, why do we need gems? The 
+ answer is that to prove that blinks induce the same 3-manifold (when they do) remains very difficult. It is 
+ straighforward to obtain a canonical gem from a blink. Proving that two gems induce the same
+ 3-manifold (when they do) is much easier because of the rich simplification theory of them (based
+ on at least 4 intertwined planarities) leading to the attractors of 3-manifolds, \cite{lins1995gca}.
+ Blinks are very good at proving that two manifolds are distinct, because from them we can extract
+ the WRT-invariants, which are very strong invariants, yet not a complete one. These invariants 
+ do not have a direct computation from triangulations, including gems. Thus, gems and 
+ blinks collaborate in a symbiotic dance to decide 
+ (at a computational level) whether two 3-manifolds are or are not homeomorphic. And census
+ become available! 
   
  We present here our modest contribution to the topic.
  It is placed in the confluency of two deep passions of the authors:
@@ -133,8 +165,30 @@ at the opening of Section 15, entitled {Open Problems:}
  by the number of edges in a minimum encoding of them by a certain class of plane graphs, 
  named blinks. A {\em blink} is a finite plane graph 
  (that is already given embedded in the plane) together with an arbitrary bipartition
- of its edges into black and gray.
-
+ of its edges into black and gray. Any closed, oriented 3-manifold is induced by some blink.
+ In fact, blinks are in 1-1 correspondence with blackboard framed 
+ links \cite{kauffman1991knots}, which are integer framed links capable of induce
+ any such 3-manifold.
+ 
+ 
+Any plane drawing whatsoever of a graph with an arbitrary bipartition of its edge set, that is, a blink,
+corresponds to a unique closed oriented 3-manifold via the associated 
+blackboard framed links. An important aspect
+about blinks is that each one possesses an easily obtainable {\em canonical form}
+inducing the same 3-manifold: it is named the {\em representative of the blink} and is obtained
+by lexicography from a small number of conventions, fixed in advance. 
+This is explained, with a great amount of details, 
+in L. Lins' thesis, \cite{lins2007blink}. 
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=6.5cm]{A.figs/doglikeblink.pdf} 
+\raisebox{1.7cm}{
+$\mapright{unique\  representative\ algorithm} {yielding\ the\ canonical \ form \ of \ the\ blink}$ }
+\includegraphics[width=3cm]{A.figs/repdoglikeblink.pdf} 
+\caption{\sf Blink representative algorithm: doglike blink with 27 edges and its representative with 25 edges.}
+\label{fig:doglikeblink}
+\end{center}
+\end{figure} 
  
  Lexicography is used to define a representative unique plane graph (a canonical form) 
  for each closed oriented 3-manifold. We explicitly solve the segmented problem 
@@ -156,7 +210,7 @@ at the opening of Section 15, entitled {Open Problems:}
 \section{A complete duplicate free census of 9-small 3-manifolds}
 In references \cite{kauffman1994tlr}, \cite{lins2007blink} and \cite{lins1995gca}
 we have defined and show how a {\em blink}, that is, a plane graph with
-an arbitrary partition of its edges (here presented as colors black and gray) induces a well
+an arbitrary bipartition of its edges (here presented as colors black and gray) induces a well
 defined closed oriented 3-manifold. Moreover each such a manifold 
 is induced by a blink (in fact, by infinite blinks).
 An {\em $n$-small} is a closed, orientable, and prime
@@ -397,12 +451,5 @@ llins@research.att.com
 
 \end{document}
 
-\begin{figure}[!htb]
-\begin{center}
-\includegraphics[scale=0.8]{A.figs/seconddoubt.pdf}
-\caption{Are these 3-manifolds homeomorphic?}
-\label{fig:seconddoubt}
-\end{center}
-\end{figure}
 
 % \printindex

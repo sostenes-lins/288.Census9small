@@ -40,11 +40,6 @@ C.~D. Hodgson and J.~R. Weeks.
   three-manifolds.
 \newblock {\em Experimental Mathematics}, 3(4):261--274, 1994.
 
-\bibitem{kauffman1991knots}
-L.H. Kauffman.
-\newblock {\em Knots and physics}, volume~1.
-\newblock World Scientific Publishing Company, 1991.
-
 \bibitem{kauffman1994tlr}
 L.H. Kauffman and S.~Lins.
 \newblock {Temperley-Lieb Recoupling Theory and Invariants of 3-manifolds}.
@@ -96,6 +91,11 @@ S.~L Lins.
 S.~L. Lins and L.~D. Lins.
 \newblock A challenge to 3-manifold topologists and group algebraists.
 \newblock {\em arXiv:1213.5964v4 [math.GT]}, 2013.
+
+\bibitem{martelli2011finite}
+B.~Martelli.
+\newblock A finite set of local moves for {K}irby calculus.
+\newblock {\em Arxiv preprint arXiv:1102.1288}, 2011.
 
 \bibitem{moise1952affine}
 E.E. Moise.
