@@ -20,18 +20,14 @@ M.~Culler, N.~M. Dunfield, and J.~Weeks.
 \newblock Snappy, a computer program for studying the geometry and topology of
   3-manifolds, 2012.
 
-\bibitem{fenn1979kirby}
-R.~Fenn and C.~Rourke.
-\newblock On {K}irby's calculus of links.
-\newblock {\em Topology}, 18(1):1--15, 1979.
-
 \bibitem{friedl3}
 S.~Friedl.
 \newblock 3-{M}anifolds after {P}erelman.
 
 \bibitem{gap2002gap}
 GAP Group et~al.
-\newblock Gap--groups, algorithms, and programming, version 4.3, 2002, 2002.
+\newblock {GAP} -- {G}roups, {A}lgorithms, and {P}rogramming, version 4.3,
+  2002, 2002.
 
 \bibitem{hempel1976}
 J.~Hempel.
@@ -86,6 +82,11 @@ S.~Lins.
 \newblock {\em {Gems, Computers, and Attractors for 3-Manifolds}}.
 \newblock World Scientific, 1995.
 
+\bibitem{lins2013B}
+S.~L Lins.
+\newblock Closed oriented 3-manifolds are equivalence classes of plane graphs.
+\newblock {\em arXiv:1305.4540v3 [math.GT]}, 2013.
+
 \bibitem{lins2013}
 S.~L Lins.
 \newblock A tougher challenge to 3-manifold topologists and group algebraists.
@@ -95,11 +96,6 @@ S.~L Lins.
 S.~L. Lins and L.~D. Lins.
 \newblock A challenge to 3-manifold topologists and group algebraists.
 \newblock {\em arXiv:1213.5964v4 [math.GT]}, 2013.
-
-\bibitem{martelli2012finite}
-B.~Martelli.
-\newblock A finite set of local moves for kirby calculus.
-\newblock {\em Journal of Knot Theory and Its Ramifications}, 21(14), 2012.
 
 \bibitem{moise1952affine}
 E.E. Moise.
@@ -111,11 +107,6 @@ E.E. Moise.
 N.~Reshetikhin and V.G. Turaev.
 \newblock Invariants of 3-manifolds via link polynomials and quantum groups.
 \newblock {\em Inventiones mathematicae}, 103(1):547--597, 1991.
-
-\bibitem{rolfsen2003knots}
-D.~Rolfsen.
-\newblock {\em Knots and links}.
-\newblock American Mathematical Society, 2003.
 
 \bibitem{sage2012}
 W.~Stein.
