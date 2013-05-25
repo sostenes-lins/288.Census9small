@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: census9small.aux
+The top-level auxiliary file: AllShapesSpaces.aux
 The style file: plain.bst
 Database file #1: bibtexIndex.bib.bib
 I was expecting a `,' or a `}'---line 1205 of file bibtexIndex.bib.bib
@@ -20,45 +20,45 @@ I was expecting a `,' or a `}'---line 6445 of file bibtexIndex.bib.bib
 I'm skipping whatever remains of this entry
 Warning--empty journal in friedl3
 Warning--empty year in friedl3
-You've used 25 entries,
+You've used 34 entries,
             2118 wiz_defined-function locations,
-            640 strings with 7045 characters,
-and the built_in function-call counts, 6326 in all, are:
-= -- 619
-> -- 234
-< -- 2
-+ -- 100
-- -- 70
-* -- 363
-:= -- 1103
-add.period$ -- 72
-call.type$ -- 25
-change.case$ -- 103
+            686 strings with 8277 characters,
+and the built_in function-call counts, 8670 in all, are:
+= -- 844
+> -- 338
+< -- 4
++ -- 142
+- -- 102
+* -- 503
+:= -- 1517
+add.period$ -- 99
+call.type$ -- 34
+change.case$ -- 143
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 259
-empty$ -- 551
-format.name$ -- 70
-if$ -- 1297
+cite$ -- 36
+duplicate$ -- 357
+empty$ -- 741
+format.name$ -- 102
+if$ -- 1776
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 26
-newline$ -- 125
-num.names$ -- 50
-pop$ -- 128
+int.to.str$ -- 34
+missing$ -- 38
+newline$ -- 170
+num.names$ -- 68
+pop$ -- 175
 preamble$ -- 1
-purify$ -- 84
+purify$ -- 118
 quote$ -- 0
-skip$ -- 180
+skip$ -- 248
 stack$ -- 0
-substring$ -- 340
-swap$ -- 27
-text.length$ -- 2
+substring$ -- 439
+swap$ -- 38
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
+type$ -- 120
 warning$ -- 2
-while$ -- 68
-width$ -- 27
-write$ -- 256
+while$ -- 90
+width$ -- 36
+write$ -- 351
 (There were 3 error messages)
