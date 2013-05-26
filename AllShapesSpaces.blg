@@ -22,7 +22,7 @@ Warning--empty journal in friedl3
 Warning--empty year in friedl3
 You've used 34 entries,
             2118 wiz_defined-function locations,
-            686 strings with 8277 characters,
+            686 strings with 8271 characters,
 and the built_in function-call counts, 8670 in all, are:
 = -- 844
 > -- 338

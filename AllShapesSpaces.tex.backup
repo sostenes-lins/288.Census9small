@@ -1,7 +1,7 @@
 \documentclass[a4paper,11pt,twoside]{article}
 
 %===========PACOTES
-\usepackage[body={170mm,235mm}]{geometry}
+\usepackage[body={175mm,240mm}]{geometry}
 %\usepackage[portuguese]{babel}
 \usepackage{a1}
 \usepackage[english]{babel}
@@ -10,7 +10,8 @@
 \usepackage{amsfonts,amssymb}
 %\usepackage{epsfig}
 \usepackage{amsmath}
-\usepackage{graphicx}	
+\usepackage{graphicx}
+\usepackage{float}
 
 % makeidx
 \usepackage{makeidx}
@@ -128,18 +129,30 @@ enlarged in the Appendix.)\\
  is provided 
  by pure combinatorics, lexicography and topological filtering of duplicates.
  This resulted in a set $U_9$ with 3437 blinks. This universal set of 9-small 3-manifold
- was partitioned by homology and WRT$_{12}$ into 487 classes, named 
+ was partitioned by homology and WRT$_{12}$ (the Witten-Reshetikhin-Turaev invariant 
+ computed, as in \cite{kauffman1994tlr} for $r=3,4,\ldots,12)$ into 487 classes, named 
  $HG12QI$-classes. This is achieved by
  explicitly obtaining homeomorphisms between any two blinks in the same $HG12QI$-class.
- Each such homeomorphism is coded into a sequence of gems
+ Each such homeomorphism is coded into a sequence of gems (defined in the next section)
  that is frozen in the data basis (Mysql) of BLINK forever, and, 
  in principle can be reproduced at will. Exactly 75633 gems were used in the 
  classifing sequences encoding homeomorphisms between the 3-manifolds of $U_9$.
  What remained to be done was to decide the status of the two $HG12QI$-classes
  $9_{126}$ and $9_{199}$ depicted in Fig. \ref{fig:nine126nine199}. After 6 years
- we posted these doubts as a Challenge in the arXiv, \cite{linslins2013A}. In a quick feedback,
- we got solutions for the two doubts: both pairs of 3-manifolds are non-homeomorphic.
- Among other people, M. Culler, N. Dunfield and C. Hodgson sent distinct proofs of this
+ we posted these doubts as a Challenge in the arXiv, \cite{linslins2013A}. 
+ In a quick feedback, many Mathematicians got interested in the Challenge (in the order of 
+ their comments in the blog)
+ \begin{center}
+ \begin{verbatim}
+ http://ldtopology.wordpress.com/2013/04/23/when-are-two-hyperbolic-
+ 3-manifolds-homeomorphic/#postcomment.
+ \end{verbatim}
+ \end{center}
+ Comments were by H. Wilton, N. Dunfield, S. Friedl, M. Culler, D. Huberman, J. Berge, 
+ C. Doria. Also, N. Dunfield M. Culler and C. Hodgson contacted one of us (S.Lins) via e-mail.
+ And we got solutions for the two 6 years old doubts: 
+ to the benefit of BLINK both pairs of 3-manifolds are non-homeomorphic.
+ M. Culler, N. Dunfield and C. Hodgson sent distinct proofs of this
  fact. Thus there are 489 classes of non-homeomorphic closed 9-small 3-manifolds. More details
  of the distinction are given in Section \ref{sec:resol}.
  \end{proof}
@@ -152,11 +165,10 @@ $U[1563]$ and $U[2165]$. Also the previous HG12QI-class $6_{5}$ became
 the homemorphism class $0_1$
 corresponding to $\mathbb{S}^2 \times \mathbb{S}^1$. We have decreased 
 by 1 the numbering of the 
-$HG12QI$-classes $6_{6}, 6_{7}, \ldots, 6_{20}$ become the 
-homeomorphisms classes  $6_{5}, 6_{7}, \ldots, 6_{19}$.
-This is because the HG12QI-classes $9_{126}$ and $9_{199}$ of \cite{lins2007blink} split
-into two topological classes. An objective of the present work 
-is to prove that the splitings indeed take place.
+$HG12QI$-classes $6_{6}, 6_{7}, \ldots, 6_{20}$ which become the 
+homeomorphisms classes  $6_{5}, 6_{7}, \ldots, 6_{19}$:
+the HG12QI-classes $9_{126}$ and $9_{199}$ of \cite{lins2007blink} split
+into two topological classes. 
 We observe that the blinks are enlarged in the appendix, showing them together with the
 corresponding blackboard framed links. The notation $n_i$ attached to each blink below,
 is the name of its homeomorphism class, not merely its HG12QI-class, as in \cite{lins2007blink}. 
@@ -258,14 +270,14 @@ the upper part of Fig. \ref{fig:12to8move}.
 \end{figure}     
 
 \subsection{A surprising new 1-1 correspondence and an $O(n^2)$-algorithm}
+\label{subsec:surprise}
 
-
-Warning: the present work is completely independent of Fig. \ref{fig:reducedblinkcalculus} 
+The present work is completely independent of Fig. \ref{fig:reducedblinkcalculus} 
 and on the Theorems and on the Conjecture \ref{theo:incredible}, \ref{theo:O2algo}, 
 \ref{theo:framedlink}, \ref{conj:remain} of this subsection, its reading
-can be skipped at no logical cost. But we strongly recomend the reader not to do so,
-because the results and the Conjecture are stated  
-to situate our research in its appropriate context and timing.
+can be skipped at no logical cost. But we recommend the reader not to do so,
+because the results and the Conjecture are stated to give a glympse and to clarify
+our research in a broader appropriate context and timing.
 
 Any closed, oriented 3-manifold is induced by some blink. Even though this object
 has been around since 1994 when it was introduced in the joint research monography of L. Kauffman and
@@ -317,8 +329,11 @@ to obtain a resoluble gem inducing the same manifold.
 Two gems induce the same 3-manifold if and only if they are linked by a finite
 sequence of {\em blobs moves} and {\em valid flip moves}. This result is proved
 for gems of arbitrary dimensions by S. Lins and M. Mulazzani in \cite{lins2006blobs}.
-What is needed to close by polynomial algorithms 
-this chain of objects is to establish the following 
+A {\em flip in a gem} is the recoupling of two equaly colored edges so as to maintain 
+the bipartiteness. Flips that transform the $I$-dipole $\{u,v\}$ into the 
+the $I \cup \{j\}$-dipole ($j \notin I \subset \{0,1,2,3\}$) and their inverses
+are named {\em valid flips}. What is needed to close by polynomial algorithms 
+between connecting these objects is to establish the following 
 Conjecture which we feel is impossible to be false:
 
 \begin{conjecture}
@@ -335,11 +350,66 @@ we gain the capability of computing the Witten-Reshetikhin-Turaev invariants
 from the latter 4 presentations, what is currently impossible, because the 
 WRT-invariants are only computable from blinks.
 
-We stress that there will be many interesting and deep consequences 
+We stress that many interesting and deep consequences 
 of Theorem \ref{theo:incredible} 
 to the topology of 3-manifolds and to the combinatorics 
-of plane graphs.
+of plane graphs ought to exist.
 
+ \subsection{Blackboard framed links}
+ The pictures and the definitions  of this subsection are reproduced 
+ from Section 12.1 of \cite{kauffman1994tlr}.
+ It is included here for completeness since the concept is central in this work.
+ Instead of working with the link in $\mathbb{R}^3$ it is to our 
+ advantage to work with a {\em general position decorated projection} of the link
+ into $\mathbb{R}^2$. Such projections are named {\em link diagrams}. 
+ General position means that the pre-image of any
+ point of $\mathbb{R}^2$ in the link is at most two points. A point that has
+ two pre-image is a transversal crossing of two strands in the projection. Decorated means
+ that we keep the information of which strand is the lower and which is the upper,
+ usually by removing a small segment of the lower strand centered at the crossing.
+ 
+ If $L$ is a link in $\mathbb{R}^3$ a {\em framed link based at $L$} is an embedding 
+ $f: \mathbb{S}^1 \times [0,1] \longrightarrow \mathbb{R}^3$
+ so that $L=f(\mathbb{S}^1 \times \{0\}).$ {\em Regular isotopy} is the class of
+ link diagrams up to Reidemeister moves 2 and 3. Framed links are represented 
+ by regular isotopy classes of link diagrams, with the extra move, 
+ the {\em ribbon equivalence}, which
+ is generated by the relations 
+ \raisebox{-4mm}{\includegraphics[width=6.7cm]{A.figs/ribbonrelation.pdf}} .
+ 
+ With these extra relation, the ribbon equivalence classes of link diagrams 
+ represent the framed links via the {\em blackboard framing}. This framing is 
+ obtained by placing a vector field normal to each link component 
+ with all the normals in the plane indicated by the diagram. We can indicate
+ this this framing by sketching the tips of the normals as a second component,
+ so that each component is indicated by an immersed band,
+ see Fig. \ref{fig:doubledtrefoil}.
+   
+ \begin{figure}[!h]
+\begin{center}
+\includegraphics[width=11cm]{A.figs/doubledtrefoil.pdf} 
+\caption{\sf How the tips of the normal vector field draws a second parallel component}
+\label{fig:doubledtrefoil}
+\end{center}
+\end{figure} 
+ 
+The reason for the ribbon equivalence is manifest in that the framings corresponding to these
+two curls (with distinct winding number in the plane) are ambient isotopic:
+$$\includegraphics[width=11cm]{A.figs/ribbonmove.pdf}$$ 
+We finish this subsection with a representative example of how to construct the 3-manifold
+from the blackboard framed link. Suppose that the link diagram $K$ has just one component
+and 3 curls corresponding to framing number 3 in $\mathbb{R}^3$:
+$$\includegraphics[width=4cm]{A.figs/linkL31.pdf}$$
+Then $\mathbb{M}^3(K)$ is obtained by sewing $m \subset \mathbb{D}^2 \times \mathbb{S}^1$ to $\ell_K \subset
+\mathbb{S}^3 \backslash (\mathbb{S}^1 \times \mathbb{D}^2)^{\tiny{o}},$ where $X^{\tiny{o}}$ means the 
+interior of $X$. The sewing, forming the lens space $L_{3,1}$, is depicted below:
+$$\includegraphics[width=10cm]{A.figs/generatingL31.pdf}.$$
+Note that the longitudinal curve $\ell_K$ in the boundary of the
+toroidal hole (which is identified with $m$ to close the toroidal hole)
+never touches the boundary of the projection of 
+the band formed by $K$ and its copy.
+
+ 
 \subsection{The complementary roles of blinks and gems}
 
  Blinks are in 1-1 correspondence with blackboard framed links which in turn encodes every 
@@ -354,16 +424,18 @@ of plane graphs.
  $\mathbb{S}^3/\langle 3,3,2\rangle$ has an spherical geometry. Its attractor
  (definition given shortly) consists
  of the single gem depicted at the right of Fig. \ref{fig:blinklinkgem}.
- 
+
   
- \begin{figure}[!h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=11cm]{A.figs/blinklinkgem.pdf} 
-\caption{\sf The minimum blink, minimum link and minimum gem inducing the binary tetrahedral space}
+\caption{\sf The minimum blink, minimum link and minimum gem inducing the 
+binary tetrahedral space}
 \label{fig:blinklinkgem}
 \end{center}
 \end{figure} 
- 
+
+
  Blinks are very easy to generate recursively. They have a rich
  simpifying theory which permits the generation of 3-manifold catalogues. 
  Moreover, their isomorphism problem is computationally  simple. 
@@ -382,20 +454,24 @@ of plane graphs.
  usually have few members, particularly if the manifold has a uniofolrm geometry
  euclidean, hyperbolic, spherical. 
  
+  Blinks are very good at proving that two manifolds are distinct, because 
+ from them we can extract
+ the WRT-invariant, which is a very strong invariant, yet not a complete one. 
+ These invariants currently 
+ do not have a direct computation neither from triangulations, neither from gems,
+ neither from Heegaard diagrams, neither from special spines of Matveev.
+ In this respect see subsection \ref{subsec:surprise}, where we report progress
+ on this issue.
  
  
- Blinks are very good at proving that two manifolds are distinct, because from them we can extract
- the WRT-invariants, which are very strong invariants, yet not a complete one. These invariants 
- do not have a direct computation from triangulations, including gems. Thus, gems and 
- blinks collaborate in a symbiotic dance to decide 
+ Gems and  blinks collaborate in a symbiotic dance to decide 
  (at a computational level) whether two 3-manifolds are or are not homeomorphic. 
- And many types of census  become available! 
-  
- We present here our modest contribution to the topic.
+ And many types of census  become available!  
+ We present here our contribution to the topic.
  It is placed in the confluency of two deep passions of the authors:
  the study of closed orientable 3-manifolds and the study of plane 
  graphs. Here, we mean to provide a strategy for a 
- segmented answer of Hempel's questions. 
+ segmented answer of Hempel's questions posed at the introduction. 
  The closed oriented 3-manifolds are partitioned
  by the number of edges in a minimum encoding of them by a blink. 
   
@@ -408,7 +484,7 @@ inducing the same 3-manifold: it is named the {\em representative of the blink} 
 by lexicography from a small number of conventions, fixed in advance. 
 This is explained, with a great amount of details, 
 in L. Lins' thesis, \cite{lins2007blink}. 
-\begin{figure}[!h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=6.5cm]{A.figs/doglikeblink.pdf} 
 \raisebox{1.7cm}{
@@ -438,20 +514,76 @@ $\mapright{unique\  representative\ algorithm} {yielding\ the\ canonical \ form 
 
   
 
-\section{Universal set of blinks and the  resolution of the doubts}
-\label{sec:resol}
+\section{Generating the $k$-universal set of blinks $U_k$}
+\label{sec:generation}
 
-\subsection{Topological filtering}
-\begin{figure}[!h]
+
+A set of blinks is said to be $k$-universal if its members induce all $k$-small prime
+3-manifolds. Note that the components of a blink is the same as the connected sum of 
+the induced 3-manifolds. Therefore, our minimal sets of $k$-universal blinks are
+composed of connected blinks. It is not difficult to implement an algorithm 
+that produces a specific
+$k$-universal set $U_k$. We start by (1) constructing all the 2-connected graphs having up to
+$k$ edges, forming a set $A$. Then we take (2) all unions of blocks 
+having a common vertex so that their edges 
+set has at most $k$ edges. Regular isotopy shows that we can restrict to having all
+blocks with a common vertex. Denote by $B$ the set of these combined blocks.
+Next (3) we consider all bicolorations of the edges so that
+the number of black edges is not smaller than the number of gray edges. We put the blink 
+in the third set only if it coincides with its representative. This forms the set $C$.
+Finally we use some topological filtering to decrease the size of $C$. The surviving blinks 
+forms the set $D$, which is our $U_k$. A final comment we make about the generation is
+that the connected blinks are implemented as embedded in $\mathbb{S}^2$. The external face
+of a blink is well defined: namely is the face indexed with number 1 in the 
+numbering which produces its code. At any rate, changing the external face
+is easily done in the blink-coin calculus: it involve regular isotopy moves, 
+one ribbon move and
+one Whitney trick simplification.
+
+\begin{figure}[H]
+   \begin{center}
+      \leavevmode
+      \includegraphics[width=11.5cm]{A.figs/4pipeline.pdf}
+   \end{center}
+   \vspace{-0.7cm}
+   \caption{Pipeline for obtaining the set $U_k$ exemplified at $k=4$. Note that, starting
+   with the empty set, the input of a phase is the output of the previous phase, that it,
+   we have a pipeline. We must
+   include the single vertex, as it corresponds to the unknot, inducing 
+   $\mathbb{S}^2 \times \mathbb{S}^1$. The cardinality of $U_4$ is only 11.}
+   \label{fig:4pipeline}
+\end{figure}
+
+The topological filters that we use are depicted in Fig. 
+\ref{fig:SomeTopologicalFiltering}.
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=14cm] {A.figs/SomeTopologicalFiltering.pdf}
-\caption{\sf Some topological filtering in the blink generation}
+\includegraphics[width=11cm] {A.figs/SomeTopologicalFiltering.pdf}
+\caption{\sf The topological filtering (at the level of blackborad framed links)
+in the generation of $U_k$. BLINK has implemented
+the pipeline generation of $U_9$ and $U_{10}$ with this filtering. 
+They have respectively 3437 and 17948 blinks.
+}
 \label{fig:SomeTopologicalFiltering}
 \end{center}
 \end{figure}   
 
+\section{Solving the 2 doubts left in L. Lins thesis}
+\label{sec:resol}
 
-\begin{figure}
+
+
+
+
+\subsection{Unveiling the mistery of the two doubts}
+The topological classification of the 9-small spaces was nearly completed in 
+\cite{lins2007blink}. This work develops a theory for generating a distinguished
+set of blinks named $U_n$ and indexed lexicographically, $U_n[i]$ is the $i$-th such blink.
+This has been revewed
+The relevance of $U_n$ is that it misses no closed, orientable, prime and irreducible
+3-manifold which is induced by a blink up to $n$ edges. 
+
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=8cm]{A.figs/nine126.pdf}
 \includegraphics[width=8cm]{A.figs/nine199.pdf}
@@ -467,14 +599,6 @@ the topological classification of the 9-small 3-manifolds.}
 \label{fig:nine126nine199}
 \end{center}
 \end{figure} 
-
-\subsection{Unveiling the mistery of the two doubts}
-The topological classification of the 9-small spaces was nearly completed in 
-\cite{lins2007blink}. This work develops a theory for generating a distinguished
-set of blinks named $U_n$ and indexed lexicographically, $U_n[i]$ is the $i$-th such blink.
-The relevance of $U_n$ is that it misses no closed, orientable, prime and irreducible
-3-manifold which is induced by a blink up to $n$ edges. 
-
 
 The 3-manifolds of \cite{lins2007blink} are classified by homology and the quantum WRT$_r$-invariants
 $r=3,\ldots,u$, with $10$ significant decimal digits forming $HGuQI$-classes of blinks. 
@@ -559,10 +683,19 @@ by yet to be found new invariants.
  \cite{lins2007blink, lins2013}. BLINK says that there is at most 2 homeomorphic classes.
  We believe this bound is attained. However SnapPy computed the homology of 4-covers
  of these spaces and they all agree. We conjecture that there is an invariant which
- break the $HG8QI$-class $16_{42}$ into two homeomorphic classes of two blinks each. 
+ breaks the $HG8QI$-class $16_{42}$ into two homeomorphic classes of two blinks each. 
  We finish this paper with a focused challenge: prove or disprove this conjecture.
+ The relevant blackboard framed links are shown in Fig. \ref{fig:T16_42focusedchallenge}
  
- 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=11cm] {A.figs/T16_42focusedchallenge.pdf}
+\caption{\sf The $HG8QI$-class $16_{42}$. We conjecture that 
+there are exactly two homeomorphism classes induced by these 4 blackboard framed links
+in $16_{42}$, and that each class is induced by 2 of the BFL's above.}
+\label{fig:T16_42focusedchallenge}
+\end{center}
+\end{figure} 
  
 
 % 
