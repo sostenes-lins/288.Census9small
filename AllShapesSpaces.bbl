@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{ahuja1993network}
+R.~K. Ahuja, T.~L. Magnanti, and J.~B. Orlin.
+\newblock Network flows: theory, algorithms, and applications.
+\newblock 1993.
+
 \bibitem{alexandrov1961elementary}
 P.~S. Aleksandroff.
 \newblock {\em Elementary concepts of topology}, volume 747.
@@ -62,17 +67,17 @@ R.~Kirby.
 \newblock {\em Inventiones Mathematicae}, 45(1):35--56, 1978.
 
 \bibitem{Klarreich1012}
-E~Klarreich.
+E.~Klarreich.
 \newblock Getting into shapes: from hyperbolic geometry to cube complexes.
 \newblock {\em Simons Foundation}, October, 2012.
 
 \bibitem{lickorish1962representation}
-W.B.R. Lickorish.
+W.~B.~R. Lickorish.
 \newblock A representation of orientable combinatorial 3-manifolds.
 \newblock {\em Annals of Mathematics}, 76(3):531--540, 1962.
 
 \bibitem{lickorish1991three}
-W.B.R. Lickorish.
+W.~B.~R. Lickorish.
 \newblock Three-manifolds and the {T}emperley-{L}ieb algebra.
 \newblock {\em Mathematische Annalen}, 290(1):657--670, 1991.
 
@@ -126,6 +131,11 @@ S.~L. Lins and R.~N. Machado.
   {III}: geometric complex $\mathcal{H}_n^\star$ embedded into $\mathbb{R}^3$.
 \newblock {\em arXiv:1212.0827v2 [math.GT]}, 2012.
 
+\bibitem{lovasz1998om}
+L.~Lovasz.
+\newblock {One Mathematics}.
+\newblock {\em The Berliner Intelligencer, Berlin}, pages 10--15, 1998.
+
 \bibitem{magnus1966combinatorial}
 W.~Magnus, A.~Karrass, and D.~Solitar.
 \newblock {\em {Combinatorial group theory}}.
@@ -164,6 +174,11 @@ W.~Stein.
   2.10.2)}.
 \newblock The Sage~Group, 2008.
 \newblock {\tt http://www.sagemath.org}.
+
+\bibitem{tamassia1987egg}
+R.~Tamassia.
+\newblock {On Embedding a Graph in the Grid with the Minimum Number of Bends}.
+\newblock {\em SIAM Journal on Computing}, 16:421, 1987.
 
 \bibitem{turaev1992state}
 V.G. Turaev and O.Y. Viro.

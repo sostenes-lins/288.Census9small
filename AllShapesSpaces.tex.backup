@@ -1,7 +1,7 @@
-\documentclass[a4paper,11pt,twoside]{article}
+\documentclass[a4paper,12pt,twoside]{article}
 
 %===========PACOTES
-\usepackage[body={175mm,240mm}]{geometry}
+\usepackage[body={177mm,240mm}]{geometry}
 %\usepackage[portuguese]{babel}
 \usepackage{a1}
 \usepackage[english]{babel}
@@ -59,12 +59,18 @@
 In this work we present a complete (no misses, no duplicates) catalogue for closed, 
 connected, orientable and
 prime 3-manifolds induced by plane graphs with a 
-bipartition of its edge set (blinks) up to 9 edges. 
+bipartition of its edge set (blinks) up to $k=9$ edges. 
 Blinks form a universal encoding for such manifolds. In fact, each such a manifold
 is a subtle class of blinks, \cite{lins2013B}. Blinks are in 1-1 correpondence with
 {\em blackboard framed links}, \cite {kauffman1991knots, kauffman1994tlr}
 We hope that this census becomes as useful for the study of concrete examples of 3-manifolds
-as the tables of knots are in the study of knots and links. 
+as the tables of knots are in the study of knots and links. We also present in this work 
+a complete theory capable of go on obtaining the similar blinks for $k=10, 11, 12, \ldots$.
+The limit is the technological state of the art. The algorithms are fully parallelizable
+and this limit seems far away. An important contribution of this work is in finding good examples
+to test the nice general theory of 3-manifold which is flourishing in this era post-Perelman.
+We have done this by recently posting in the arXiv the 13 classes of 3-manifolds left open
+in L. Lins' Thesis under the supervision of S. Lins, \cite{lins2007blink}.
 
 % Along the years we have made an issue
 % in our computational work that it must be reproducible and independently checked by other researchers. 
@@ -101,28 +107,37 @@ at the opening of Section 15, entitled {Open Problems:}
 
  
 \subsection{A complete duplicate free census of 9-small 3-manifolds}
-In references \cite{kauffman1994tlr}, \cite{lins2007blink} and \cite{lins1995gca}
-we have defined and show how a {\em blink}, that is, a plane graph with
-an arbitrary bipartition of its edges (here presented as 
-colors black and gray) induces a well
-defined closed oriented 3-manifold. Moreover each such a manifold 
-is induced by a blink (in fact, by infinite blinks).
-An {\em $n$-small} is a closed, connected, orientable and prime
-3-manifold is a manifold induced by a blink with at most $n$ edges.
-This paper concludes the proof of the following theorem: 
-\begin{theorem}[The first 489 closed orientable 3-manifolds]
+
+This paper concludes the proof of the following theorem, where 3-manifold means 
+a closed orientable one and a {\em $k$-small} 3-manifold is a closed, 
+connected, orientable and prime induced by a blink with at most $k$ edges.
+\begin{theorem}
 Let $\mathbb{M}^3$ be an 9-small 3-manifold.
 Then $\mathbb{M}^3$ is homeomorphic to exactly one of the 
 3-manifolds induced by the 489  blinks below. Morever all of these are pairwise non-homeomorphic.
 (However being redundant, we also present the corresponding 
 census for the blackboard framed links. These census are
 enlarged in the Appendix.)\\
+% \newpage
+% .
+% \vspace{10cm}
+% \center{This page left intentionally blank}
+% \newpage
 \includegraphics[width=17.5cm]{A.figs/primes489.pdf}\\
 \includegraphics[width=17.5cm]{A.figs/primes489links.pdf} 
 \label{theorem:census9}
 \end{theorem}
 
-\begin{proof}
+In references \cite{kauffman1994tlr}, \cite{lins2007blink} and \cite{lins1995gca}
+we have defined and show how a {\em blink}, that is, a plane graph with
+an arbitrary bipartition of its edges (here presented as 
+colors black and gray) induces a well
+defined closed oriented 3-manifold. Moreover each such a manifold 
+is induced by a blink (in fact, by infinite blinks).
+
+
+
+\begin{proof} {\bf (Of the Theorem above)}
  The bulk of the proof follows from L. Lins' thesis under the supervision of S. Lins, 
  \cite{lins2007blink}.
  In this work a theory for blink generation (missing no closed orientable 3-manifolds)
@@ -150,7 +165,7 @@ enlarged in the Appendix.)\\
  \end{center}
  Comments were by H. Wilton, N. Dunfield, S. Friedl, M. Culler, D. Huberman, J. Berge, 
  C. Doria. Also, N. Dunfield M. Culler and C. Hodgson contacted one of us (S.Lins) via e-mail.
- And we got solutions for the two 6 years old doubts: 
+ And we got solutions for the two 6 year old doubts: 
  to the benefit of BLINK both pairs of 3-manifolds are non-homeomorphic.
  M. Culler, N. Dunfield and C. Hodgson sent distinct proofs of this
  fact. Thus there are 489 classes of non-homeomorphic closed 9-small 3-manifolds. More details
@@ -168,10 +183,45 @@ by 1 the numbering of the
 $HG12QI$-classes $6_{6}, 6_{7}, \ldots, 6_{20}$ which become the 
 homeomorphisms classes  $6_{5}, 6_{7}, \ldots, 6_{19}$:
 the HG12QI-classes $9_{126}$ and $9_{199}$ of \cite{lins2007blink} split
-into two topological classes. 
+into two homeomorphism classes. 
 We observe that the blinks are enlarged in the appendix, showing them together with the
 corresponding blackboard framed links. The notation $n_i$ attached to each blink below,
 is the name of its homeomorphism class, not merely its HG12QI-class, as in \cite{lins2007blink}. 
+
+In Fig. \ref{fig:linkblink} we depict the function which associates a blink to a given
+blackboard framed link via a checkerboard bicoloration of the faces of the link diagram.
+The function has clearly an inverse and associated linear algorithms 
+to go from BFL to link and from link to BFL are defined. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=9.3cm] {A.figs/linkblink.pdf}
+\caption{\sf The linear algorithm to get a blink 
+from a blackboard framed link. The inverse algorithm is also linear. 
+}
+\label{fig:linkblink}
+\end{center}
+\end{figure} 
+
+
+\subsection{A word about the drawings in this work}
+As important as the Mathematical content of this paper is the possibility of
+easy visualization of the objects.
+The elegant drawings of blinks and blackboard framed links produced by the software BLINK are 
+possible due the groundbreaking algorithm of R. Tamasia \cite{tamassia1987egg}.
+We could implement the drawings very fast because we had at hand the implementation of
+network flow algorithms we had done for a project to solve {\em practical timetable (!) problems}.
+This is an example of the unicity in Mathematics, advocated by L. Lovasz in his famous essay \cite{lovasz1998om}.
+To get the drawings one has to apply three times the full strength of network flow theory,
+\cite{ahuja1993network}.
+The drawings BLINK present are in an integer grid and 
+deterministically minimize the number of $\pi/2$-bents in the blackboarded framed links.
+In particular, it permit us to deal with the unavoidable curls in the BFL's and the corresponding
+loops and pendant edges which adjust the integer framings to self-writhes in
+the best possible way: we do not care about them. 
+The drawings for the companion blinks require a slight modification: it replaces each $p$-valent vertex $p>4$,
+by a $p$-polygon inducing 3-valent ones. The final result is massaged a bit to
+produce aesthetically pleasing and unambiguous figures in a homogeneous grid.
 
 \subsection{Brief historical overview}
 
@@ -200,7 +250,7 @@ is the name of its homeomorphism class, not merely its HG12QI-class, as in \cite
  2000's, G. Perelman revolutionized the field proving Poincaré's Conjecture and
  Thurston's Geometrization Conjecture. More recently in the 2010's, I. Agol is leading the field
  in this era post-Perelman. Of course, this is only a diagonal list of researchers. Many more have contributed and
- some are  extremely active in this era pos-Perelman, \cite{friedl3}. 
+ some are  extremely active in this era post-Perelman, \cite{friedl3}. 
  Currently there is a great amount of important reserch issues
  going on and these are exciting times for 3-manifold theory. See the recent essay of E. Klarreich
  in the Simons Foundation, \cite{Klarreich1012}.
@@ -210,11 +260,13 @@ Unexplored simplicity. This was the reason for birth of this work many years ago
 Repeating, a {\em blink} is a finite plane graph 
 (that is, given embedded in the plane) together with an arbitrary bipartition
 of its edges into black and gray. For completeness
-we briefly recall the basic definitions of gem theory, leading to its definition, \cite{lins1995gca}
-and to its calculus bsed in dipole moves, \cite{ferri1982crystallisation,lins2006blobs}.
+we briefly recall the basic definitions of gem theory, leading to its 
+definition, \cite{lins1995gca}
+and to its calculus based in dipole moves, \cite{ferri1982crystallisation,lins2006blobs}.
 A {\em 4-graph} $G$ is a finite bipartite 4-regular graph whose edges are partitioned into 4 colors,
 0,1,2, and 3, 
-so that at each vertex there is an edge of each color, a proper edge-coloration, \cite{bondy1976gta}.
+so that at each vertex there is an edge of each color, 
+a proper edge-coloration, \cite{bondy1976gta}.
 For each $i \in \{0,1,2,3\}$, let $E_i$ denote the set of $i$-colored edges of $G$.
 A $\{j,k\}$-residue in a $4$-graph $G$ is a connected component of the subgraph induced by $E_j \cup E_k$.
 A 2-residue is a $\{j,k\}$-residue, for some distinct colors $j$ and $k$.
@@ -228,7 +280,7 @@ barycentric subdivision of $T$. Here the colors correspond
 to the dimensions. 
 Given a pair of vertices $\{u,v\}$ of a gem $G$ with $k$ linking edges $k \in \{0,1,2,3\}$, 
 in $k$ distinct colors $K \subset \{0,1,2,3\}$ is called a {\em $K$-dipole} if $u$ and $v$ 
-are in distinct $(\{0,1,2,3\})\backslash K$-residues of $G$. A {\em dipole cancellation} is the 
+are in distinct $(\{0,1,2,3\}\backslash K)$-residues of $G$. A {\em dipole cancellation} is the 
 operation that remove $u$, $v$ and their $k$ linking edges leaving $4-k$ pairs of pendant
 edges which are reunited along the same colors. The {\em dipole creation} is the inverse move.
 The dipole creations and cancellations do not change the induced 3-manifold.
@@ -243,15 +295,18 @@ or a diplole creation,
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=15cm] {A.figs/12to8move.pdf}
-\caption{\sf The $(12\to 8)$-simplification and the 
-BFL $\to$ gem algorithm. 
+\caption{\sf The passage $X \longrightarrow A$ corresponds
+to the $12X$-algorithm to go from a BFL to a gem, proved 
+correct in \cite{kauffman1994tlr}.
+The $(12\to 8)$-simplification and the 
+BFL $\to$ gem algorithm appears in \cite{lins2007blink}. 
 }
 \label{fig:12to8move}
 \end{center}
 \end{figure} 
 
 In our context, a very important property of gems is that, given any
-blackboard framed link with $n$ crossings there is an algorithhm to 
+blackboard framed link with $n$ crossings there is a linear algorithhm to 
 present a gem having $8n$ vertices which induce the same 3-manifold.
 This algorithm is displayed at the bottom part of Fig. \ref{fig:12to8move}.
 This was proved originally in Kauffman-Lins monography, page 175 of 
@@ -264,7 +319,7 @@ the upper part of Fig. \ref{fig:12to8move}.
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=15cm] {A.figs/reducedblinkcalculus.pdf}
-\caption{\sf A (36-move,18-coin) reduced (sufficient) blink-coin calculus}
+\caption{\sf A 36-move reduced (sufficient) coin calculus}
 \label{fig:reducedblinkcalculus}
 \end{center}
 \end{figure}     
@@ -286,14 +341,14 @@ This is about to change because as a consequence, \cite{lins2013B}, of a recent
 result of B. Martelli, \cite {martelli2011finite,martelli2012finite}, each such a 
 3-manifold becomes a subtle equivalence class of blinks.
 In \cite{lins2013B}, a new calculus, this time on blinks, 
-named {\em the blink-coin calculus} with 
+named {\em the coin calculus} with 
 8 types of local moves each applied to 8 types of related sub-blinks (named coins) are shown 
 to capture the essence of homeomorphism between 3-manifolds, in the sense of 
-Theorem \ref{theo:incredible}. A sufficent reduced blink-coin calculus with 36 moves is shown
+Theorem \ref{theo:incredible}. A sufficent reduced coin calculus with 36 moves is shown
 in Fig. \ref{fig:reducedblinkcalculus}.
 \begin{theorem}
 \label{theo:incredible} 
-Closed orientable 3-manifolds up to homeomorphism are blinks up to the blink-coin calculus.
+Closed orientable 3-manifolds up to homeomorphism are blinks up to the coin calculus.
 \end{theorem}
 The meaning of the theorem is that there exists a bijection 
 $$\beta: \ \ \frac{{3\hspace{-1mm}-\hspace{-1mm}manifolds}}{{homeomorphisms}}\ \  
@@ -319,46 +374,70 @@ we feel that is important to mention it here because they imply that there is
 an $O(n^2)$-algorithm to find $\beta$ in the cases that the 3-manifold is given by a
 resoluble gem. The proper definition of resoluble gem is still unecessary complicated
 in the posted papers. Recently, in a still unpublished work, with the adequate definition 
-of resolubility the same authors have proved the following theorem:
+of resolubility (which we state after the theorem) 
+the same authors have proved the following theorem:
 \begin{theorem}
 \label{theo:framedlink}
 If a 3-manifold is given by a framed link then there exists a linear algorithm
 to obtain a resoluble gem inducing the same manifold.
 \end{theorem}
 
+Here is the {\em currently adequate (we are still trying to improving it)} 
+definition of resoluble gem. Let $G$ be a gem and
+$u,v$ distinct vertices. For $j\in\{2,3\}$ we say that $\{u,v\}$ 
+is a {\em $j$-double meeting, or a $dm_j$} if $u,v$ are in the same $\{0,j\}$-residue,
+in the same $\{i,k\}$-residue and in distinct $\{2,3\}$-residues. Let $E_4$ be a set
+of new edges (in color 4) linking $u$ to $v$, whenever $\{u,v\}$ is a $dm_2$ in $G$. 
+Let $E_5$ be a set
+of new edges (in color 5) linking $u$ to $v$, whenever $\{u,v\}$ is a $dm_3$ in $G$. 
+Let $G_1=G$, $G_2$ be $G$ with its colors rotated permuted under $(1,2,3)$ and $G_3$ be
+$G$ with its edges permuted under $(1,3,2)$. We say that $G$ is a {\em resoluble gem} if
+$G_i \backslash\{E_0 \cup E_1\} \cup E_4 \cup E_5$ is connected, for some $i \in \{1,2,3\}$.
+
+
 Two gems induce the same 3-manifold if and only if they are linked by a finite
-sequence of {\em blobs moves} and {\em valid flip moves}. This result is proved
+sequence of {\em blob moves} and {\em valid flip moves}. This result is proved
 for gems of arbitrary dimensions by S. Lins and M. Mulazzani in \cite{lins2006blobs}.
-A {\em flip in a gem} is the recoupling of two equaly colored edges so as to maintain 
+A {\em blob} $\{u,v\}$ is an $\{i,j,k\}$-dipole for 3 distinct colors $i, j, k$.
+A {\em flip in a gem} is the recoupling of two equally colored edges so as to maintain 
 the bipartiteness. Flips that transform the $I$-dipole $\{u,v\}$ into the 
 the $I \cup \{j\}$-dipole ($j \notin I \subset \{0,1,2,3\}$) and their inverses
-are named {\em valid flips}. What is needed to close by polynomial algorithms 
-between connecting these objects is to establish the following 
-Conjecture which we feel is impossible to be false:
+are named {\em valid flips}. What is needed to link by or $O(n)$ or $O(n^2)$  algorithms 
+any two of the following set of universal presentations of the same 3-manifold $(UP3M)$: 
+
+\begin{center}
+{\em $UP3M=\{$ gem (S. Lins), triangulation (E. Moise), Hegaard diagram, special spine (Matveev), 
+\\ homology based framed link (SnapPy),
+$\pm \infty$-fractional framed link (D. Rolfsen), integer framed\\ link  (Lickorish \& Kirby),
+blackboard framed link (L. Kauffman), blink (S. Lins) $\}.$}
+\end{center}
+is the following Conjecture which we feel is impossible to be false:
 
 \begin{conjecture}
 \label{conj:remain}
- A resoluble gem remains so under a blob move, or a valid flip move.
+ A resoluble gem remains so under a blob move, or a valid flip move and straightforward
+ simplifications using $TS$-moves and $U$-moves, \cite{lins1995gca}.
 \end{conjecture}
 
 If is true, as we are sure it is, the Conjecture means that there is an 
 $O(n^ 2)$-algorithm to produce a blink inducing the same space as the one
-given by an arbitrary gem, an arbitrary triangulation, an arbitrary
-Heegaard diagram or an arbitrary special spine. Note that, as a bonus
+given by an arbitrary member of $UP3M$. Note that, as a bonus
 we gain the capability of computing the Witten-Reshetikhin-Turaev invariants
 \cite{reshetikhin1991invariants, kauffman1994tlr}
-from the latter 4 presentations, what is currently impossible, because the 
-WRT-invariants are only computable from blinks.
+from all the members of $UP3M$, what is currently impossible, because the 
+WRT-invariants are only computable from the ones directly related to blinks.
 
-We stress that many interesting and deep consequences 
+We stress our belief that many interesting and deep consequences to be investigated
 of Theorem \ref{theo:incredible} 
 to the topology of 3-manifolds and to the combinatorics 
-of plane graphs ought to exist.
+of plane graphs ought to exist. Here is an example: what does it means,
+in terms of blinks a closed orientable 3-manifold having 
+a homogeneous Riemannian geometry?
 
  \subsection{Blackboard framed links}
- The pictures and the definitions  of this subsection are reproduced 
+ Some pictures and some definitions of this subsection are reproduced 
  from Section 12.1 of \cite{kauffman1994tlr}.
- It is included here for completeness since the concept is central in this work.
+ They are included here for completeness since the concept is central in this work.
  Instead of working with the link in $\mathbb{R}^3$ it is to our 
  advantage to work with a {\em general position decorated projection} of the link
  into $\mathbb{R}^2$. Such projections are named {\em link diagrams}. 
@@ -377,7 +456,7 @@ of plane graphs ought to exist.
  is generated by the relations 
  \raisebox{-4mm}{\includegraphics[width=6.7cm]{A.figs/ribbonrelation.pdf}} .
  
- With these extra relation, the ribbon equivalence classes of link diagrams 
+ With these extra relations, the ribbon equivalence classes of link diagrams 
  represent the framed links via the {\em blackboard framing}. This framing is 
  obtained by placing a vector field normal to each link component 
  with all the normals in the plane indicated by the diagram. We can indicate
@@ -441,7 +520,7 @@ binary tetrahedral space}
  Moreover, their isomorphism problem is computationally  simple. 
  Being blinks so good, why do we need gems? The 
  answer is that to prove that blinks induce the same 
- 3-manifold (when they do) remains (probably even with the new blink-coin calculus)
+ 3-manifold (when they do) remains (probably even with the new coin calculus)
  a very difficult problem. It is 
  straighforward to obtain a canonical gem from a blink, \cite{kauffman1994tlr,lins2007blink}.
  Proving that two gems induce the same
@@ -451,8 +530,8 @@ binary tetrahedral space}
  of 3-manifolds}, \cite{lins1995gca}. These are defined as the set of gems inducing 
  the manifold having the minimum set of vertices. The important computational 
  point is that the attractor
- usually have few members, particularly if the manifold has a uniofolrm geometry
- euclidean, hyperbolic, spherical. 
+ usually have few members, particularly if the manifold has a uniform geometry
+ euclidean, spherical, hyperbolic. 
  
   Blinks are very good at proving that two manifolds are distinct, because 
  from them we can extract
@@ -512,22 +591,23 @@ $\mapright{unique\  representative\ algorithm} {yielding\ the\ canonical \ form 
  A classifying $INV$ for the 9-small 3-manifolds is
  $INV=\{{\ homology}, W\hspace{-0.5mm}RT_{12}, { \ length \ of\ smallest\  geodesic}\ \}.$
 
-  
-
 \section{Generating the $k$-universal set of blinks $U_k$}
 \label{sec:generation}
 
 
 A set of blinks is said to be $k$-universal if its members induce all $k$-small prime
-3-manifolds. Note that the components of a blink is the same as the connected sum of 
-the induced 3-manifolds. Therefore, our minimal sets of $k$-universal blinks are
+3-manifolds. Note that the components of a disconnected blink correspond to the summands 
+in the connected sum of the 3-manifolds induced by the components of the blink. 
+Therefore, our minimal sets of $k$-universal blinks are
 composed of connected blinks. It is not difficult to implement an algorithm 
 that produces a specific
 $k$-universal set $U_k$. We start by (1) constructing all the 2-connected graphs having up to
-$k$ edges, forming a set $A$. Then we take (2) all unions of blocks 
+$k$ edges, forming a set $A$. This is a standard procedure in graph theory.
+Then we take (2) all unions of blocks 
 having a common vertex so that their edges 
 set has at most $k$ edges. Regular isotopy shows that we can restrict to having all
-blocks with a common vertex. Denote by $B$ the set of these combined blocks.
+blocks with a common vertex. And, by lexicography we do this in a unique way.
+Denote by $B$ the set of these combined blocks.
 Next (3) we consider all bicolorations of the edges so that
 the number of black edges is not smaller than the number of gray edges. We put the blink 
 in the third set only if it coincides with its representative. This forms the set $C$.
@@ -536,14 +616,14 @@ forms the set $D$, which is our $U_k$. A final comment we make about the generat
 that the connected blinks are implemented as embedded in $\mathbb{S}^2$. The external face
 of a blink is well defined: namely is the face indexed with number 1 in the 
 numbering which produces its code. At any rate, changing the external face
-is easily done in the blink-coin calculus: it involve regular isotopy moves, 
+is easily done in the coin calculus: it involve regular isotopy moves, 
 one ribbon move and
 one Whitney trick simplification.
 
 \begin{figure}[H]
    \begin{center}
       \leavevmode
-      \includegraphics[width=11.5cm]{A.figs/4pipeline.pdf}
+      \includegraphics[width=10.5cm]{A.figs/4pipeline.pdf}
    \end{center}
    \vspace{-0.7cm}
    \caption{Pipeline for obtaining the set $U_k$ exemplified at $k=4$. Note that, starting
@@ -568,14 +648,9 @@ They have respectively 3437 and 17948 blinks.
 \end{center}
 \end{figure}   
 
-\section{Solving the 2 doubts left in L. Lins thesis}
+\section{Unveiling the mistery of the two doubts in L. Lins thesis}
 \label{sec:resol}
 
-
-
-
-
-\subsection{Unveiling the mistery of the two doubts}
 The topological classification of the 9-small spaces was nearly completed in 
 \cite{lins2007blink}. This work develops a theory for generating a distinguished
 set of blinks named $U_n$ and indexed lexicographically, $U_n[i]$ is the $i$-th such blink.
@@ -689,28 +764,32 @@ by yet to be found new invariants.
  
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=11cm] {A.figs/T16_42focusedchallenge.pdf}
+\includegraphics[width=14cm] {A.figs/T16_42focusedchallenge.pdf}
 \caption{\sf The $HG8QI$-class $16_{42}$. We conjecture that 
 there are exactly two homeomorphism classes induced by these 4 blackboard framed links
-in $16_{42}$, and that each class is induced by 2 of the BFL's above.}
+in $16_{42}$, and that each class is induced by 2 of the BFL's above.
+BLINK tell us that there is at most 2 homeomorphism classes,
+(each induced by two blinks) and SnapPy/Sge/GAP 
+showed that the 4 blinks induced 3-manifold have 4-coverings with the same homology
+(tests effected by C. Nascimento). Coverings of other indices have been very slow
+to compute. We do not know whether SnapPy can get isomophic
+triangulation for the 4 blinks. We bet not, BLINK would have found them. Asssuming
+that there are two homeomorphism classes, which computable invariant will distinguish
+them? Have we reached our current technological limit with this example? 
+If so, we need badly to discover new invariants.
+The eleven examples (of which $HG8QI$-class $16_{42}$ is the fifth) 
+forming the touger challenges in $\cite{lins2013}$ must be taken seriously.
+To us most of them remain open. It seems that if they can be solved at all, it will
+be by luck, involving very expensive computations. We need
+something better. After all, our input is a very small combinatorial object.
+}
 \label{fig:T16_42focusedchallenge}
 \end{center}
 \end{figure} 
  
 
-% 
-% Our bet is that both pairs of 3-manifolds in the 2 first sections of 
-% this short note are not homeomorphic. This would mean that the $9$-small manifolds are
-% completely classified and that
-% the combinatorial dynamics of Chapter 4 in \cite{lins1995gca} based 
-% on $TS$-moves which leads to a  (small, in the case of hyperbolic 3-manifolds)
-% number of minimal gems, named the {\em attractor of
-% the 3-manifold} is successful. This induces an efficient algorithm which 
-% is capable of classifying topologically all the 3-manifolds given as a blackboard framed link
-% with up to (so far) 9 crossings and maintains live the two Conjectures of page 15 of \cite{lins1995gca}:
-% the $TS$- and $u^n$-moves yield an efficient algorithm
-% to classify $n$-small 3-manifolds by explicitly displaying homeomorphisms, whenever they exist.
-
+ 
+ 
 %-----------------------------------
 \bibliographystyle{plain}
 %\bibliographystyle{is-alpha}
@@ -745,7 +824,10 @@ llins@research.att.com
 \hspace{20mm}
 
 \end{center}
-
+\newpage
+.
+\vspace{10cm}
+\center{This page left intentionally blank.}
 \newpage
 \section{Appendix: census (no misses, no duplicates) of 9-small 3-manifolds}
 \subsection*{Part 1/4 in terms of blinks:}

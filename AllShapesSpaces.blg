@@ -18,47 +18,48 @@ I was expecting a `,' or a `}'---line 6445 of file bibtexIndex.bib.bib
  : %160
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--empty journal in ahuja1993network
 Warning--empty journal in friedl3
 Warning--empty year in friedl3
-You've used 34 entries,
+You've used 37 entries,
             2118 wiz_defined-function locations,
-            686 strings with 8271 characters,
-and the built_in function-call counts, 8670 in all, are:
-= -- 844
-> -- 338
-< -- 4
-+ -- 142
-- -- 102
-* -- 503
-:= -- 1517
-add.period$ -- 99
-call.type$ -- 34
-change.case$ -- 143
+            704 strings with 8597 characters,
+and the built_in function-call counts, 9533 in all, are:
+= -- 931
+> -- 370
+< -- 5
++ -- 155
+- -- 112
+* -- 551
+:= -- 1663
+add.period$ -- 108
+call.type$ -- 37
+change.case$ -- 157
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 357
-empty$ -- 741
-format.name$ -- 102
-if$ -- 1776
+cite$ -- 40
+duplicate$ -- 396
+empty$ -- 809
+format.name$ -- 112
+if$ -- 1958
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 38
-newline$ -- 170
-num.names$ -- 68
-pop$ -- 175
+int.to.str$ -- 37
+missing$ -- 41
+newline$ -- 185
+num.names$ -- 74
+pop$ -- 189
 preamble$ -- 1
-purify$ -- 118
+purify$ -- 129
 quote$ -- 0
-skip$ -- 248
+skip$ -- 278
 stack$ -- 0
-substring$ -- 439
-swap$ -- 38
-text.length$ -- 4
+substring$ -- 487
+swap$ -- 47
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
-warning$ -- 2
-while$ -- 90
-width$ -- 36
-write$ -- 351
+type$ -- 132
+warning$ -- 3
+while$ -- 100
+width$ -- 39
+write$ -- 382
 (There were 3 error messages)
