@@ -665,7 +665,7 @@ in the generation of $U_k$. A final ingredient that we use in the topological
 filtering is to drop blinks that produce non-prime 3-manifolds. They can be
 detected easily by finding a separating handle in the associated gems: just a 
 coboundary with 4 differently colored edges. There are only 14/3437 composite 
-$HG12QI$-classes of blink in $U_9$s.
+$HG12QI$-classes of blink in $U_9$.
 }
 \label{fig:SomeTopologicalFiltering}
 \end{center}
@@ -807,7 +807,7 @@ may help us in the future to find some new subtle invariant which
 does not take so long to execute 
 while having no guaranty of success.
 }
-\label{fig:T16_42focusedchallenge}
+\label{fig:T15t_19focusedchallenge}
 \end{center}
 \end{figure} 
  

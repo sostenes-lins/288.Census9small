@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.11)  28 MAY 2013 17:01
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.11)  28 MAY 2013 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -473,7 +473,7 @@ File: A.figs/4pipeline.pdf Graphic file (type pdf)
 
 <use A.figs/4pipeline.pdf>
 Package pdftex.def Info: A.figs/4pipeline.pdf used on input line 644.
-(pdftex.def)             Requested size: 398.33858pt x 359.25621pt.
+(pdftex.def)             Requested size: 455.24408pt x 410.58191pt.
 
 <A.figs/SomeTopologicalFiltering.pdf, id=106, 458.63892pt x 222.77304pt>
 File: A.figs/SomeTopologicalFiltering.pdf Graphic file (type pdf)
@@ -612,7 +612,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [29 <./A.figs/primes489linksm22.pdf>] (./AllShapesSpaces.aux) ) 
 Here is how much of TeX's memory you used:
  3658 strings out of 493485
- 50194 string characters out of 3143526
+ 50195 string characters out of 3143526
  117417 words of memory out of 3000000
  6866 multiletter control sequences out of 15000+200000
  18926 words of font info for 73 fonts, out of 3000000 for 9000
