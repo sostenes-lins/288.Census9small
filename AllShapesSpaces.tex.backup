@@ -65,12 +65,20 @@ is a subtle class of blinks, \cite{lins2013B}. Blinks are in 1-1 correpondence w
 {\em blackboard framed links}, \cite {kauffman1991knots, kauffman1994tlr}
 We hope that this census becomes as useful for the study of concrete examples of 3-manifolds
 as the tables of knots are in the study of knots and links. We also present in this work 
-a complete theory capable of go on obtaining the similar blinks for $k=10, 11, 12, \ldots$.
+a complete theory capable of going on obtaining the similar census of 
+3-manifolds homeomorphism cleasses encoded by blinks up to $k=10, 11, 12, \ldots$ edges.
 The limit is the technological state of the art. The algorithms are fully parallelizable
 and this limit seems far away. An important contribution of this work is in finding good examples
-to test the nice general theory of 3-manifold which is flourishing in this era post-Perelman.
-We have done this by recently posting in the arXiv the 13 classes of 3-manifolds left open
-in L. Lins' Thesis under the supervision of S. Lins, \cite{lins2007blink}.
+to test the splendid general theory of (we are focused at closed oriented) 3-manifold
+which is flourishing in this era post-Perelman.
+We have done this by recently posting in the arXiv two papers with 2+11=13 
+classes of 3-manifolds left open
+in L. Lins' Thesis under the supervision of S. Lins, \cite{lins2007blink}. 
+The first challenge, containing 2 classes was solved quickly by various 
+researchers in the 3-manifold community. 
+However the second with tougher challenges having 11 classes of
+3-manifolds mysteriously got no feedback. In the final section
+of this paper we explain why these challenges should be taken seriously.
 
 % Along the years we have made an issue
 % in our computational work that it must be reproducible and independently checked by other researchers. 
@@ -110,7 +118,8 @@ at the opening of Section 15, entitled {Open Problems:}
 
 This paper concludes the proof of the following theorem, where 3-manifold means 
 a closed orientable one and a {\em $k$-small} 3-manifold is a closed, 
-connected, orientable and prime induced by a blink with at most $k$ edges.
+connected, orientable and prime induced by a (necessarily connected) 
+blink with at most $k$ edges.
 \begin{theorem}
 Let $\mathbb{M}^3$ be an 9-small 3-manifold.
 Then $\mathbb{M}^3$ is homeomorphic to exactly one of the 
@@ -118,11 +127,11 @@ Then $\mathbb{M}^3$ is homeomorphic to exactly one of the
 (However being redundant, we also present the corresponding 
 census for the blackboard framed links. These census are
 enlarged in the Appendix.)\\
-% \newpage
-% .
-% \vspace{10cm}
-% \center{This page left intentionally blank}
-% \newpage
+\newpage
+.
+\vspace{10cm}
+\center{This page left intentionally blank}
+\newpage
 \includegraphics[width=17.5cm]{A.figs/primes489.pdf}\\
 \includegraphics[width=17.5cm]{A.figs/primes489links.pdf} 
 \label{theorem:census9}
@@ -195,7 +204,7 @@ to go from BFL to link and from link to BFL are defined.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=9.3cm] {A.figs/linkblink.pdf}
+\includegraphics[width=11.3cm] {A.figs/linkblink.pdf}
 \caption{\sf The linear algorithm to get a blink 
 from a blackboard framed link. The inverse algorithm is also linear. 
 }
@@ -295,11 +304,14 @@ or a diplole creation,
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=15cm] {A.figs/12to8move.pdf}
-\caption{\sf The passage $X \longrightarrow A$ corresponds
-to the $12X$-algorithm to go from a BFL to a gem, proved 
+\caption{\sf The passage $X \rightarrow A$ corresponds
+to the $12X$-algorithm to go from a BFL to a gem, is defined and proved to be
 correct in \cite{kauffman1994tlr}.
-The $(12\to 8)$-simplification and the 
-BFL $\to$ gem algorithm appears in \cite{lins2007blink}. 
+The $(12\to 8)$-simplification by dipole moves (passages $A \rightarrow B\rightarrow
+\ldots \rightarrow I$) 
+first appears in \cite{lins2007blink}. 
+The final $8X$-algorithm to go from a BFL to a gem 
+is depicted in the lower part of the figure. 
 }
 \label{fig:12to8move}
 \end{center}
@@ -319,7 +331,7 @@ the upper part of Fig. \ref{fig:12to8move}.
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[width=15cm] {A.figs/reducedblinkcalculus.pdf}
-\caption{\sf A 36-move reduced (sufficient) coin calculus}
+\caption{\sf A 36-move, 36-coins (not all distinct) reduced (sufficient) coin calculus}
 \label{fig:reducedblinkcalculus}
 \end{center}
 \end{figure}     
@@ -331,7 +343,7 @@ The present work is completely independent of Fig. \ref{fig:reducedblinkcalculus
 and on the Theorems and on the Conjecture \ref{theo:incredible}, \ref{theo:O2algo}, 
 \ref{theo:framedlink}, \ref{conj:remain} of this subsection, its reading
 can be skipped at no logical cost. But we recommend the reader not to do so,
-because the results and the Conjecture are stated to give a glympse and to clarify
+because the Theorems and the Conjecture are stated to give a glympse and to clarify
 our research in a broader appropriate context and timing.
 
 Any closed, oriented 3-manifold is induced by some blink. Even though this object
@@ -344,8 +356,8 @@ In \cite{lins2013B}, a new calculus, this time on blinks,
 named {\em the coin calculus} with 
 8 types of local moves each applied to 8 types of related sub-blinks (named coins) are shown 
 to capture the essence of homeomorphism between 3-manifolds, in the sense of 
-Theorem \ref{theo:incredible}. A sufficent reduced coin calculus with 36 moves is shown
-in Fig. \ref{fig:reducedblinkcalculus}.
+Theorem \ref{theo:incredible}. A sufficent reduced coin calculus with 36 moves and 36 blinks 
+is shown in Fig. \ref{fig:reducedblinkcalculus}.
 \begin{theorem}
 \label{theo:incredible} 
 Closed orientable 3-manifolds up to homeomorphism are blinks up to the coin calculus.
@@ -406,10 +418,16 @@ are named {\em valid flips}. What is needed to link by or $O(n)$ or $O(n^2)$  al
 any two of the following set of universal presentations of the same 3-manifold $(UP3M)$: 
 
 \begin{center}
-{\em $UP3M=\{$ gem (S. Lins), triangulation (E. Moise), Hegaard diagram, special spine (Matveev), 
-\\ homology based framed link (SnapPy),
-$\pm \infty$-fractional framed link (D. Rolfsen), integer framed\\ link  (Lickorish \& Kirby),
-blackboard framed link (L. Kauffman), blink (S. Lins) $\}.$}
+{\em $UP3M=\{$ gem (Italian School of crystallizations \&S. Lins), 
+triangulation (E. Moise), 
+Hegaard diagram, 
+special spine (Matveev), 
+homology based framed link (SnapPy),
+$\pm \infty$-fractional framed link (D. Rolfsen), 
+integer framed, 
+link  (Lickorish \& Kirby),
+blackboard framed link (L. Kauffman), 
+blink (S. Lins) $\}.$}
 \end{center}
 is the following Conjecture which we feel is impossible to be false:
 
@@ -435,9 +453,9 @@ in terms of blinks a closed orientable 3-manifold having
 a homogeneous Riemannian geometry?
 
  \subsection{Blackboard framed links}
- Some pictures and some definitions of this subsection are reproduced 
+ The pictures and some definitions of this subsection are reproduced 
  from Section 12.1 of \cite{kauffman1994tlr}.
- They are included here for completeness since the concept is central in this work.
+ They are included here for completeness since the concept is central in this paper.
  Instead of working with the link in $\mathbb{R}^3$ it is to our 
  advantage to work with a {\em general position decorated projection} of the link
  into $\mathbb{R}^2$. Such projections are named {\em link diagrams}. 
@@ -630,7 +648,10 @@ one Whitney trick simplification.
    with the empty set, the input of a phase is the output of the previous phase, that it,
    we have a pipeline. We must
    include the single vertex, as it corresponds to the unknot, inducing 
-   $\mathbb{S}^2 \times \mathbb{S}^1$. The cardinality of $U_4$ is only 11.}
+   $\mathbb{S}^2 \times \mathbb{S}^1$. The cardinality of $U_4$ is only 11.
+   BLINK has in its data basis the sets $U_9$ and $U_{10}$ with respectively
+   3437 and 17948 blinks.
+   }
    \label{fig:4pipeline}
 \end{figure}
 
@@ -724,7 +745,8 @@ to produce a recursive indexation of $n$-small 3-manifolds up to homeomorphism. 
 solve this problem
 up to $n=9$. Conceptually we could go on forever, finding in the way 
 tougher and tougher examples to be distinguished
-by yet to be found new invariants.
+by yet to be found new invariants. This is particularly reachable, if we consider that the 
+census generating algorithms are fully parallellizable, and this parallelization was not used.
  The topological classification of the 9-small 3-manifolds involve three invariants: 
  $$INV=\{{\ homology}, \ W\hspace{-0.5mm}RT_{12}, { \ length \ of\ smallest\  geodesic}\ \}.$$
  The classification was nearly complete in \cite{lins2007blink}, except for two doubts. Recently,
@@ -750,38 +772,35 @@ by yet to be found new invariants.
  the majority of the {\em Tough Challenges} of \cite{lins2013} remains unresolved.
  Have we arived to our currently technological limit? Maybe so, but what we feel the 
  difficulty of SnapPy and BLINK in dealing with the tough challenges teach us is
- that we need better subtle invariants computed quicky than the current ones. 
+ that we need to find better subtle invariants which performs quicker than the current ones. 
  Invariants which are not so exponential
- as looking for small index coverings which depend on the fundamental group. 
- The $HG8QI$-class $16_{42}$ is composed of 4 blinks 
- $\{T[305]$, $T[337]$, $T[387]$, $T[420]\}$, in the notation of 
- \cite{lins2007blink, lins2013}. BLINK says that there is at most 2 homeomorphic classes.
- We believe this bound is attained. However SnapPy computed the homology of 4-covers
- of these spaces and they all agree. We conjecture that there is an invariant which
- breaks the $HG8QI$-class $16_{42}$ into two homeomorphic classes of two blinks each. 
- We finish this paper with a focused challenge: prove or disprove this conjecture.
- The relevant blackboard framed links are shown in Fig. \ref{fig:T16_42focusedchallenge}
+ as looking for small index coverings which depend on the infinite 
+ idiosyncrasies of the fundamental group. 
  
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=14cm] {A.figs/T16_42focusedchallenge.pdf}
-\caption{\sf The $HG8QI$-class $16_{42}$. We conjecture that 
+\includegraphics[width=14cm] {A.figs/T15t_19focusedchallenge.pdf}
+\caption{\sf A focused challenge: the $HG8QI$-class $15^t_{19}$. We conjecture that 
 there are exactly two homeomorphism classes induced by these 4 blackboard framed links
-in $16_{42}$, and that each class is induced by 2 of the BFL's above.
+in $15^t_{19}$, and that each class is induced by 2 of the BFL's above.
 BLINK tell us that there is at most 2 homeomorphism classes,
-(each induced by two blinks) and SnapPy/Sge/GAP 
-showed that the 4 blinks induced 3-manifold have 4-coverings with the same homology
-(tests effected by C. Nascimento). Coverings of other indices have been very slow
-to compute. We do not know whether SnapPy can get isomophic
-triangulation for the 4 blinks. We bet not, BLINK would have found them. Asssuming
+(each induced by two blinks). Using SnapPy/Sge/GAP we could not find the Dirichlet domain
+to compute volumes. Also low index $k$-covering methods, take long and fail for $k=3,4,5,6,7,8$.
+We do not know whether SnapPy can get isomophic
+triangulations for the 4 blinks. We bet not, BLINK would have found them. Asssuming
 that there are two homeomorphism classes, which computable invariant will distinguish
-them? Have we reached our current technological limit with this example? 
+them? Have we reached our current technological limit with such a small example? 
 If so, we need badly to discover new invariants.
-The eleven examples (of which $HG8QI$-class $16_{42}$ is the fifth) 
-forming the touger challenges in $\cite{lins2013}$ must be taken seriously.
+The eleven examples (of which $HG8QI$-class $1t^t_{19}$ is the third) 
+forming the tougher challenges in $\cite{lins2013}$ must be taken seriously.
 To us most of them remain open. It seems that if they can be solved at all, it will
 be by luck, involving very expensive computations. We need
-something better. After all, our input is a very small combinatorial object.
+something better. After all, our input is a very small combinatorial object: all
+the information is stored in a 16-edge plane graph (the blinks in the $T$-census are
+monochromatic). It is our hope that the close connection between 3-manifolds and 
+plane graphs of \cite{lins2013B}
+may help to find some new subtle invariant which does not take so long to execute 
+while having no guaranty of success.
 }
 \label{fig:T16_42focusedchallenge}
 \end{center}

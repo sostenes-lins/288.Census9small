@@ -418,10 +418,16 @@ are named {\em valid flips}. What is needed to link by or $O(n)$ or $O(n^2)$  al
 any two of the following set of universal presentations of the same 3-manifold $(UP3M)$: 
 
 \begin{center}
-{\em $UP3M=\{$ gem (S. Lins), triangulation (E. Moise), Hegaard diagram, special spine (Matveev), 
-\\ homology based framed link (SnapPy),
-$\pm \infty$-fractional framed link (D. Rolfsen), integer framed\\ link  (Lickorish \& Kirby),
-blackboard framed link (L. Kauffman), blink (S. Lins) $\}.$}
+{\em $UP3M=\{$ gem (Italian School of crystallizations \&S. Lins), 
+triangulation (E. Moise), 
+Hegaard diagram, 
+special spine (Matveev), 
+homology based framed link (SnapPy),
+$\pm \infty$-fractional framed link (D. Rolfsen), 
+integer framed, 
+link  (Lickorish \& Kirby),
+blackboard framed link (L. Kauffman), 
+blink (S. Lins) $\}.$}
 \end{center}
 is the following Conjecture which we feel is impossible to be false:
 
@@ -447,9 +453,9 @@ in terms of blinks a closed orientable 3-manifold having
 a homogeneous Riemannian geometry?
 
  \subsection{Blackboard framed links}
- Some pictures and some definitions of this subsection are reproduced 
+ The pictures and some definitions of this subsection are reproduced 
  from Section 12.1 of \cite{kauffman1994tlr}.
- They are included here for completeness since the concept is central in this work.
+ They are included here for completeness since the concept is central in this paper.
  Instead of working with the link in $\mathbb{R}^3$ it is to our 
  advantage to work with a {\em general position decorated projection} of the link
  into $\mathbb{R}^2$. Such projections are named {\em link diagrams}. 
@@ -635,14 +641,17 @@ one Whitney trick simplification.
 \begin{figure}[H]
    \begin{center}
       \leavevmode
-      \includegraphics[width=10.5cm]{A.figs/4pipeline.pdf}
+      \includegraphics[width=14.0cm]{A.figs/4pipeline.pdf}
    \end{center}
    \vspace{-0.7cm}
    \caption{Pipeline for obtaining the set $U_k$ exemplified at $k=4$. Note that, starting
    with the empty set, the input of a phase is the output of the previous phase, that it,
    we have a pipeline. We must
    include the single vertex, as it corresponds to the unknot, inducing 
-   $\mathbb{S}^2 \times \mathbb{S}^1$. The cardinality of $U_4$ is only 11.}
+   $\mathbb{S}^2 \times \mathbb{S}^1$. The cardinality of $U_4$ is only 11.
+   BLINK has in its data basis the sets $U_9$ and $U_{10}$ with respectively
+   3437 and 17948 blinks.
+   }
    \label{fig:4pipeline}
 \end{figure}
 
@@ -650,11 +659,13 @@ The topological filters that we use are depicted in Fig.
 \ref{fig:SomeTopologicalFiltering}.
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=11cm] {A.figs/SomeTopologicalFiltering.pdf}
+\includegraphics[width=14cm] {A.figs/SomeTopologicalFiltering.pdf}
 \caption{\sf The topological filtering (at the level of blackborad framed links)
-in the generation of $U_k$. BLINK has implemented
-the pipeline generation of $U_9$ and $U_{10}$ with this filtering. 
-They have respectively 3437 and 17948 blinks.
+in the generation of $U_k$. A final ingredient that we use in the topological 
+filtering is to drop blinks that produce non-prime 3-manifolds. They can be
+detected easily by finding a separating handle in the associated gems: just a 
+coboundary with 4 differently colored edges. There are only 14/3437 composite 
+$HG12QI$-classes of blink in $U_9$s.
 }
 \label{fig:SomeTopologicalFiltering}
 \end{center}
@@ -713,6 +724,7 @@ command shows the {\em complex lengths}
 of closed geodesics --- the real part is the actual length and the imaginary 
 part is the rotation angle
 as you go once around the geodesic.''}\\
+\newpage
 \begin{center}
 \center{Class $9_{126}$:}
 \begin{verbatim}
@@ -763,38 +775,37 @@ census generating algorithms are fully parallellizable, and this parallelization
  the majority of the {\em Tough Challenges} of \cite{lins2013} remains unresolved.
  Have we arived to our currently technological limit? Maybe so, but what we feel the 
  difficulty of SnapPy and BLINK in dealing with the tough challenges teach us is
- that we need better subtle invariants computed quicky than the current ones. 
+ that we need to find better subtle invariants which performs quicker than the current ones. 
  Invariants which are not so exponential
- as looking for small index coverings which depend on the fundamental group. 
- The $HG8QI$-class $16_{42}$ is composed of 4 blinks 
- $\{T[305]$, $T[337]$, $T[387]$, $T[420]\}$, in the notation of 
- \cite{lins2007blink, lins2013}. BLINK says that there is at most 2 homeomorphic classes.
- We believe this bound is attained. However SnapPy computed the homology of 4-covers
- of these spaces and they all agree. We conjecture that there is an invariant which
- breaks the $HG8QI$-class $16_{42}$ into two homeomorphic classes of two blinks each. 
- We finish this paper with a focused challenge: prove or disprove this conjecture.
- The relevant blackboard framed links are shown in Fig. \ref{fig:T16_42focusedchallenge}
+ as looking for small index coverings which depend on the infinite 
+ idiosyncrasies of the fundamental group. 
  
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=14cm] {A.figs/T16_42focusedchallenge.pdf}
-\caption{\sf The $HG8QI$-class $16_{42}$. We conjecture that 
+\includegraphics[width=14cm] {A.figs/T15t_19focusedchallenge.pdf}
+\caption{\sf A focused challenge: the $HG8QI$-class $15^t_{19}$. We conjecture that 
 there are exactly two homeomorphism classes induced by these 4 blackboard framed links
-in $16_{42}$, and that each class is induced by 2 of the BFL's above.
+in $15^t_{19}$, and that each class is induced by 2 of the BFL's above.
 BLINK tell us that there is at most 2 homeomorphism classes,
-(each induced by two blinks) and SnapPy/Sge/GAP 
-showed that the 4 blinks induced 3-manifold have 4-coverings with the same homology
-(tests effected by C. Nascimento). Coverings of other indices have been very slow
-to compute. We do not know whether SnapPy can get isomophic
+(each induced by two blinks). Using SnapPy/Sage/GAP we could not find the Dirichlet domain,
+due to numerical inaccuracies, and could not compute the volumes.
+Also low index $k$-covering methods, take long and fail for $k=3,4,5,6,7,8$.
+We do not know whether SnapPy can get isomophic
 triangulations for the 4 blinks. We bet not, BLINK would have found them. Asssuming
 that there are two homeomorphism classes, which computable invariant will distinguish
-them? Have we reached our current technological limit with this example? 
+them? Have we reached our current technological limit with such a small example? 
 If so, we need badly to discover new invariants.
-The eleven examples (of which $HG8QI$-class $16_{42}$ is the fifth) 
-forming the touger challenges in $\cite{lins2013}$ must be taken seriously.
+The eleven examples (of which $HG8QI$-class $1t^t_{19}$ is the third) 
+forming the tougher challenges in $\cite{lins2013}$ must be taken seriously.
 To us most of them remain open. It seems that if they can be solved at all, it will
 be by luck, involving very expensive computations. We need
-something better. After all, our input is a very small combinatorial object.
+something better. After all, our input is a very small combinatorial object: all
+the information is stored in a 16-edge plane graph (the blinks in the $T$-census are
+monochromatic). It is our hope that the close connection between 3-manifolds and 
+plane graphs of \cite{lins2013B}
+may help us in the future to find some new subtle invariant which 
+does not take so long to execute 
+while having no guaranty of success.
 }
 \label{fig:T16_42focusedchallenge}
 \end{center}
@@ -838,10 +849,10 @@ llins@research.att.com
 
 \end{center}
 \newpage
-.
-\vspace{10cm}
-\center{This page left intentionally blank.}
-\newpage
+% .
+% \vspace{10cm}
+% \center{This page left intentionally blank.}
+% \newpage
 \section{Appendix: census (no misses, no duplicates) of 9-small 3-manifolds}
 \subsection*{Part 1/4 in terms of blinks:}
 \center{\includegraphics[width=16.5cm]{A.figs/primes489m11.pdf}} \eject \noindent
