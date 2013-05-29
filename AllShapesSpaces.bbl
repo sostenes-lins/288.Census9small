@@ -168,6 +168,11 @@ N.~Reshetikhin and V.G. Turaev.
 \newblock Invariants of 3-manifolds via link polynomials and quantum groups.
 \newblock {\em Inventiones mathematicae}, 103(1):547--597, 1991.
 
+\bibitem{rolfsen2003knots}
+D.~Rolfsen.
+\newblock {\em Knots and links}.
+\newblock American Mathematical Society, 2003.
+
 \bibitem{sage2012}
 W.~Stein.
 \newblock {\em {Sage}: {O}pen {S}ource {M}athematical {S}oftware ({V}ersion

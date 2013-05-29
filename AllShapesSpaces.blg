@@ -21,45 +21,45 @@ I'm skipping whatever remains of this entry
 Warning--empty journal in ahuja1993network
 Warning--empty journal in friedl3
 Warning--empty year in friedl3
-You've used 37 entries,
+You've used 38 entries,
             2118 wiz_defined-function locations,
-            704 strings with 8597 characters,
-and the built_in function-call counts, 9533 in all, are:
-= -- 931
-> -- 370
+            709 strings with 8672 characters,
+and the built_in function-call counts, 9748 in all, are:
+= -- 950
+> -- 377
 < -- 5
-+ -- 155
-- -- 112
-* -- 551
-:= -- 1663
-add.period$ -- 108
-call.type$ -- 37
-change.case$ -- 157
++ -- 158
+- -- 114
+* -- 559
+:= -- 1701
+add.period$ -- 111
+call.type$ -- 38
+change.case$ -- 160
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 396
-empty$ -- 809
-format.name$ -- 112
-if$ -- 1958
+cite$ -- 41
+duplicate$ -- 408
+empty$ -- 831
+format.name$ -- 114
+if$ -- 2004
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 41
-newline$ -- 185
-num.names$ -- 74
-pop$ -- 189
+int.to.str$ -- 38
+missing$ -- 43
+newline$ -- 190
+num.names$ -- 76
+pop$ -- 197
 preamble$ -- 1
-purify$ -- 129
+purify$ -- 132
 quote$ -- 0
-skip$ -- 278
+skip$ -- 284
 stack$ -- 0
-substring$ -- 487
-swap$ -- 47
+substring$ -- 492
+swap$ -- 48
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 132
+type$ -- 134
 warning$ -- 3
-while$ -- 100
-width$ -- 39
-write$ -- 382
+while$ -- 102
+width$ -- 40
+write$ -- 392
 (There were 3 error messages)
