@@ -42,7 +42,7 @@ GAP Group et~al.
 \bibitem{hempel1976}
 J.~Hempel.
 \newblock {\em 3-Manifolds}, volume 349.
-\newblock Amer. Math. Soc., 1976.
+\newblock Amer, Math. Soc., 1976.
 
 \bibitem{hodgson1994symmetries}
 C.~D. Hodgson and J.~R. Weeks.
@@ -51,12 +51,12 @@ C.~D. Hodgson and J.~R. Weeks.
 \newblock {\em Experimental Mathematics}, 3(4):261--274, 1994.
 
 \bibitem{kauffman1991knots}
-L.~H. Kauffman.
+L.H. Kauffman.
 \newblock {\em Knots and physics}, volume~1.
 \newblock World Scientific Publishing Company, 1991.
 
 \bibitem{kauffman1994tlr}
-L.~H. Kauffman and S.~L. Lins.
+L.H. Kauffman and S.~L. Lins.
 \newblock {Temperley-Lieb Recoupling Theory and Invariants of 3-manifolds}.
 \newblock {\em Annals of Mathematical Studies, Princeton University Press},
   134:1--296, 1994.
@@ -136,11 +136,6 @@ L.~Lovasz.
 \newblock {One Mathematics}.
 \newblock {\em The Berliner Intelligencer, Berlin}, pages 10--15, 1998.
 
-\bibitem{magnus1966combinatorial}
-W.~Magnus, A.~Karrass, and D.~Solitar.
-\newblock {\em {Combinatorial group theory}}.
-\newblock Interscience Publishers New York, 1966.
-
 \bibitem{martelli2011finite}
 B.~Martelli.
 \newblock A finite set of local moves for {K}irby calculus.
@@ -148,7 +143,7 @@ B.~Martelli.
 
 \bibitem{martelli2012finite}
 B.~Martelli.
-\newblock A finite set of local moves for kirby calculus.
+\newblock A finite set of local moves for {K}irby calculus.
 \newblock {\em Journal of Knot Theory and Its Ramifications}, 21(14), 2012.
 
 \bibitem{matveev2007algorithmic}
@@ -158,13 +153,13 @@ S.~Matveev.
 \newblock Springer, 2007.
 
 \bibitem{moise1952affine}
-E.E. Moise.
+E.~E. Moise.
 \newblock Affine structures in 3-manifolds: V. the triangulation theorem and
   hauptvermutung.
 \newblock {\em The Annals of Mathematics}, 56(1):96--114, 1952.
 
 \bibitem{reshetikhin1991invariants}
-N.~Reshetikhin and V.G. Turaev.
+N.~Reshetikhin and V.~G. Turaev.
 \newblock Invariants of 3-manifolds via link polynomials and quantum groups.
 \newblock {\em Inventiones mathematicae}, 103(1):547--597, 1991.
 
@@ -186,7 +181,7 @@ R.~Tamassia.
 \newblock {\em SIAM Journal on Computing}, 16:421, 1987.
 
 \bibitem{turaev1992state}
-V.G. Turaev and O.Y. Viro.
+V.~G. Turaev and O.~Y. Viro.
 \newblock State sum invariants of 3-manifolds and quantum 6j-symbols.
 \newblock {\em Topology}, 31(4):865--902, 1992.
 
@@ -197,7 +192,7 @@ J.~Weeks.
 
 \bibitem{witten1989quantum}
 E.~Witten.
-\newblock Quantum field theory and the jones polynomial.
+\newblock Quantum field theory and the {J}ones polynomial.
 \newblock {\em Communications in Mathematical Physics}, 121(3):351--399, 1989.
 
 \end{thebibliography}
