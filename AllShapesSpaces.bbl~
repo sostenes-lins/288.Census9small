@@ -1,0 +1,183 @@
+\begin{thebibliography}{10}
+
+\bibitem{alexandrov1961elementary}
+P.~S. Aleksandroff.
+\newblock {\em Elementary concepts of topology}, volume 747.
+\newblock Courier Dover Publications, 1961.
+
+\bibitem{alexandroff1932einfachste}
+P.~Alexandroff and D.~Hilbert.
+\newblock {\em Einfachste grundbegriffe der topologie}.
+\newblock Springer Berlin, 1932.
+
+\bibitem{bondy1976gta}
+J.~A. Bondy and U.~S.~R. Murty.
+\newblock {\em {Graph theory with applications}}.
+\newblock Macmillan London, 1976.
+
+\bibitem{snappy}
+M.~Culler, N.~M. Dunfield, and J.~Weeks.
+\newblock Snappy, a computer program for studying the geometry and topology of
+  3-manifolds, 2012.
+
+\bibitem{ferri1982crystallisation}
+M.~Ferri and C.~Gagliardi.
+\newblock {Crystallisation moves}.
+\newblock {\em Pacific J. Math}, 100(1):85--103, 1982.
+
+\bibitem{friedl3}
+S.~Friedl.
+\newblock 3-{M}anifolds after {P}erelman.
+
+\bibitem{gap2002gap}
+GAP Group et~al.
+\newblock {GAP} -- {G}roups, {A}lgorithms, and {P}rogramming, version 4.3,
+  2002, 2002.
+
+\bibitem{hempel1976}
+J.~Hempel.
+\newblock {\em 3-Manifolds}, volume 349.
+\newblock Amer. Math. Soc., 1976.
+
+\bibitem{hodgson1994symmetries}
+C.~D. Hodgson and J.~R. Weeks.
+\newblock Symmetries, isometries and length spectra of closed hyperbolic
+  three-manifolds.
+\newblock {\em Experimental Mathematics}, 3(4):261--274, 1994.
+
+\bibitem{kauffman1991knots}
+L.~H. Kauffman.
+\newblock {\em Knots and physics}, volume~1.
+\newblock World Scientific Publishing Company, 1991.
+
+\bibitem{kauffman1994tlr}
+L.~H. Kauffman and S.~L. Lins.
+\newblock {Temperley-Lieb Recoupling Theory and Invariants of 3-manifolds}.
+\newblock {\em Annals of Mathematical Studies, Princeton University Press},
+  134:1--296, 1994.
+
+\bibitem{kirby1978calculus}
+R.~Kirby.
+\newblock A calculus for framed links in ${S}^3$.
+\newblock {\em Inventiones Mathematicae}, 45(1):35--56, 1978.
+
+\bibitem{Klarreich1012}
+E~Klarreich.
+\newblock Getting into shapes: from hyperbolic geometry to cube complexes.
+\newblock {\em Simons Foundation}, October, 2012.
+
+\bibitem{lickorish1962representation}
+W.B.R. Lickorish.
+\newblock A representation of orientable combinatorial 3-manifolds.
+\newblock {\em Annals of Mathematics}, 76(3):531--540, 1962.
+
+\bibitem{lickorish1991three}
+W.B.R. Lickorish.
+\newblock Three-manifolds and the {T}emperley-{L}ieb algebra.
+\newblock {\em Mathematische Annalen}, 290(1):657--670, 1991.
+
+\bibitem{lins2007blink}
+L.~D. Lins.
+\newblock Blink: a language to view, recognize, classify and manipulate
+  3{D}-spaces.
+\newblock {\em Arxiv preprint math/0702057}, 2007.
+
+\bibitem{lins2006blobs}
+S.~Lins and M.~Mulazzani.
+\newblock {Blobs and flips on gems}.
+\newblock {\em Journal of Knot Theory and its Ramifications}, 15(8):1001--1035,
+  2006.
+
+\bibitem{lins1995gca}
+S.~L. Lins.
+\newblock {\em {Gems, Computers, and Attractors for 3-Manifolds}}.
+\newblock World Scientific, 1995.
+
+\bibitem{lins2013B}
+S.~L. Lins.
+\newblock Closed oriented 3-manifolds are equivalence classes of plane graphs.
+\newblock {\em arXiv:1305.4540v3 [math.GT]}, 2013.
+
+\bibitem{lins2013}
+S.~L. Lins.
+\newblock A tougher challenge to 3-manifold topologists and group algebraists.
+\newblock {\em arXiv:1305.2617v2 [math.GT]}, 2013.
+
+\bibitem{linslins2013A}
+S.~L. Lins and L.~D. Lins.
+\newblock A challenge to 3-manifold topologists and group algebraists.
+\newblock {\em arXiv:1213.5964v4 [math.GT]}, 2013.
+
+\bibitem{linsmachadoA2012}
+S.~L. Lins and R.~N. Machado.
+\newblock Framed link presentations of 3-manifolds by an ${O}(n^2)$ algorithm,
+  {I}: gems and their duals.
+\newblock {\em arXiv:1211.1953v2 [math.GT]}, 2012.
+
+\bibitem{linsmachadoB2012}
+S.~L. Lins and R.~N. Machado.
+\newblock Framed link presentations of 3-manifolds by an ${O}(n^2)$ algorithm,
+  {II}: colored complexes and boundings in their complexity.
+\newblock {\em arXiv:1212.0826v2 [math.GT]}, 2012.
+
+\bibitem{linsmachadoC2012}
+S.~L. Lins and R.~N. Machado.
+\newblock Framed link presentations of 3-manifolds by an ${O}(n^2)$ algorithm,
+  {III}: geometric complex $\mathcal{H}_n^\star$ embedded into $\mathbb{R}^3$.
+\newblock {\em arXiv:1212.0827v2 [math.GT]}, 2012.
+
+\bibitem{magnus1966combinatorial}
+W.~Magnus, A.~Karrass, and D.~Solitar.
+\newblock {\em {Combinatorial group theory}}.
+\newblock Interscience Publishers New York, 1966.
+
+\bibitem{martelli2011finite}
+B.~Martelli.
+\newblock A finite set of local moves for {K}irby calculus.
+\newblock {\em Arxiv preprint arXiv:1102.1288}, 2011.
+
+\bibitem{martelli2012finite}
+B.~Martelli.
+\newblock A finite set of local moves for kirby calculus.
+\newblock {\em Journal of Knot Theory and Its Ramifications}, 21(14), 2012.
+
+\bibitem{matveev2007algorithmic}
+S.~Matveev.
+\newblock {\em Algorithmic topology and classification of 3-manifolds},
+  volume~9.
+\newblock Springer, 2007.
+
+\bibitem{moise1952affine}
+E.E. Moise.
+\newblock Affine structures in 3-manifolds: V. the triangulation theorem and
+  hauptvermutung.
+\newblock {\em The Annals of Mathematics}, 56(1):96--114, 1952.
+
+\bibitem{reshetikhin1991invariants}
+N.~Reshetikhin and V.G. Turaev.
+\newblock Invariants of 3-manifolds via link polynomials and quantum groups.
+\newblock {\em Inventiones mathematicae}, 103(1):547--597, 1991.
+
+\bibitem{sage2012}
+W.~Stein.
+\newblock {\em {Sage}: {O}pen {S}ource {M}athematical {S}oftware ({V}ersion
+  2.10.2)}.
+\newblock The Sage~Group, 2008.
+\newblock {\tt http://www.sagemath.org}.
+
+\bibitem{turaev1992state}
+V.G. Turaev and O.Y. Viro.
+\newblock State sum invariants of 3-manifolds and quantum 6j-symbols.
+\newblock {\em Topology}, 31(4):865--902, 1992.
+
+\bibitem{weeks2001snappea}
+J.~Weeks.
+\newblock Snap{P}ea: a computer program for creating and studying hyperbolic
+  3-manifolds, 2001.
+
+\bibitem{witten1989quantum}
+E.~Witten.
+\newblock Quantum field theory and the jones polynomial.
+\newblock {\em Communications in Mathematical Physics}, 121(3):351--399, 1989.
+
+\end{thebibliography}
