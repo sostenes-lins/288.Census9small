@@ -13,59 +13,53 @@ I was expecting a `,' or a `}'---line 1499 of file bibtexIndex.bib.bib
  : @article{polyak2010minimal,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `)'---line 3451 of file bibtexIndex.bib.bib
- : 
- : }
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 6421 of file bibtexIndex.bib.bib
  : 
  : %160
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "magnus1966combinatorial"
 Warning--empty journal in ahuja1993network
 Warning--empty journal in friedl3
 Warning--empty year in friedl3
-You've used 37 entries,
+You've used 38 entries,
             2118 wiz_defined-function locations,
-            704 strings with 8524 characters,
-and the built_in function-call counts, 9466 in all, are:
-= -- 926
-> -- 359
+            708 strings with 8630 characters,
+and the built_in function-call counts, 9748 in all, are:
+= -- 950
+> -- 377
 < -- 5
-+ -- 151
-- -- 108
-* -- 542
-:= -- 1651
-add.period$ -- 108
-call.type$ -- 37
-change.case$ -- 155
++ -- 158
+- -- 114
+* -- 559
+:= -- 1701
+add.period$ -- 111
+call.type$ -- 38
+change.case$ -- 160
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 396
-empty$ -- 809
-format.name$ -- 108
-if$ -- 1946
+cite$ -- 41
+duplicate$ -- 408
+empty$ -- 831
+format.name$ -- 114
+if$ -- 2004
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 41
-newline$ -- 185
-num.names$ -- 74
-pop$ -- 187
+int.to.str$ -- 38
+missing$ -- 43
+newline$ -- 190
+num.names$ -- 76
+pop$ -- 197
 preamble$ -- 1
-purify$ -- 127
+purify$ -- 132
 quote$ -- 0
-skip$ -- 278
+skip$ -- 284
 stack$ -- 0
-substring$ -- 487
-swap$ -- 47
+substring$ -- 492
+swap$ -- 48
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 132
+type$ -- 134
 warning$ -- 3
-while$ -- 100
-width$ -- 39
-write$ -- 382
-(There were 4 error messages)
+while$ -- 102
+width$ -- 40
+write$ -- 392
+(There were 3 error messages)
