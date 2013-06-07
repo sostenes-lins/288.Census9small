@@ -13,7 +13,7 @@ bin-release/
 *.aux
 *.log
 *.blg
-*.lof
+*.log
 *.toc
 *.dvi
 *.idx
@@ -27,4 +27,6 @@ E.fi*/*gz
 main.pdf
 B.arXiv
 *.zip
+AllShapesSpaces.pdf
+
 
